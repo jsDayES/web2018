@@ -1,0 +1,116 @@
+title: JSDayES 2017
+header:
+    changeNavState: Change navigation state
+    home: Home
+    streaming: Streaming
+    speakers: Speakers
+    schedule: Schedule
+    where: Where
+    tickets: Tickets
+    organizers: Organizers
+    sponsors: Sponsors
+    cfp: CfP
+
+where:
+    transport: Transport
+
+home:
+    welcome: Welcome to JSDayES 2017
+    text1: Talks & Workshops
+    text2: JavaScript, NodeJS, AngularJS, Polymer...
+    date: 12 & 13 May 2017 <br/> Madrid
+
+speakers:
+    title: Speakers
+    description:  >
+        We have selected the best speakers to  tell us
+        their experience with Javascript.
+
+cfp:
+    title: Submit your paper
+    join: Join us!
+    description: Do you want to give a talk? <br> Do not think about it. Access and sign up!
+    dates: Important dates
+    limit: Limit for submitting proposals.
+    datelimit: January 31th, 2017
+    notification: Date when we'll communicate accepted proposals.
+    notificationTitle: Notification of acceptance
+    notificationlimit: February 2017
+
+eventPresentation:
+    title: <span class="name">JSDayES</span> Spain’s largest Javascript Conference
+    description: <strong>JSDayES</strong> is a two-day multi-track conference (English & Spanish) focused in Javascript and its ecosystem.
+    description2: JavaScript, NodeJS, React, AngularJS, Polymer... Are you going to miss it?
+
+schedule:
+    title: Schedule
+    description1: The best talks about the technology ecosystem of JavaScript.
+    description2: Two days with talks and workshops.
+
+contact:
+    title: Contact
+    description: For any doubt or suggestion you have, <br/> don't hesitate to contact us.
+    button: Contact us
+
+organizers:
+    title: Organizers
+    description: Behind this event we are a group of communities<br/> related to the use of technologies focused on JavaScript.
+
+codeOfConduct:
+    title: Code of conduct
+    description: The event will be governed by this <a href="/codeofconduct.html">code of conduct</a>, which can be summarized in: respects others.
+
+sponsors:
+    title: Sponsors
+    description: Sponsoring offers a unique opportunity to expose your brand and find talents and profiles specialized in JavaScript technologies.
+    button: Sign up as a sponsor
+
+sponsorsInfo:
+    title: Sponsorship models
+    allowed: Allowed
+    notallowed: Not allowed
+    logo: Logo on the web
+    acknowledgment: Thanks at the event
+    printLogo: Logo in printed material
+    logoscreen: Logo in event screen
+    presentation: 5 minutes presentation
+    table: Table with own roll up
+    press: Reference in press and social media
+    layards: Lanyard Sponsor
+    welcomePack: Flyer or gift in Welcome Pack
+    mailing: Standalone mailing
+    dinner: Dinner with speakers and organization
+    freetickets: Tickets
+    person: person
+    people: people
+    ticket: ticket
+    tickets: tickets
+    sponsorticket: Complimentary ticket
+
+tickets:
+    title: Tickets
+    superearly: Super Early Bird
+    superearlyprice: 25€
+    early: Early Bird
+    earlyprice: 50€
+    point1: Two day access
+    point2: Lunch (13 May)
+    point3: Pack JSDayEs
+    buy: Buy
+    buyticket: Buy Ticket
+    soldout: Sold out
+    specialWorkshop: Workshop with @substack
+    specialWorkshopPrice: 80€
+    specialWorkshopDesc: Hands On: The Modular Web! by <a target="_blank" href="https://twitter.com/substack">@substack</a>
+    normal: Regular
+    normalTicketPrice: 80€
+    special: Students and unemployed
+    specialTicketPrice: 20€
+    warning: Has to be certified upon entrance to the venue.
+    specialpoint: Same as regular ticket
+
+footer:
+    twitter: JSDayES Twitter
+    youtube: JSDayES Youtube
+    google: JSDayES Google Plus
+    copyright: JSDayES - 3rd Edition &copy; May 2017
