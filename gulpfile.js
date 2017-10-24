@@ -54,6 +54,8 @@ var paths = {
     dist   : './dist/'
 };
 
+var isProd = false;
+
 gulp.task ('clean', function () {
     return del ([
         './dist/**',
@@ -62,7 +64,7 @@ gulp.task ('clean', function () {
 
 gulp.task ('images', function () {
     return gulp.src (paths.images)
-        .pipe ($.imagemin ({ progressive: true }))
+        .pipe($.if(isProd, $.imagemin ({ progressive: true })))
         .pipe (gulp.dest (paths.dist + '/img/'));
 });
 
@@ -74,7 +76,7 @@ gulp.task ('ico', function () {
 gulp.task ('js', function () {
     return gulp.src (paths.js)
         .pipe ($.concat ('main.js',{newLine: ';'}))
-        .pipe ($.uglify ())
+        .pipe($.if(isProd, $.uglify()))
         .pipe (gulp.dest (paths.dist + '/js/'));
 });
 
@@ -86,12 +88,12 @@ gulp.task ('koliseo', function () {
 gulp.task ('css', function () {
     var page =  gulp.src (paths.css)
         .pipe ($.concat ('main.css'))
-        .pipe ($.cssmin ())
+        .pipe($.if(isProd, $.cssmin()))
         .pipe (gulp.dest (paths.dist + '/css/'));
 
     var codePage = gulp.src (paths.code)
         .pipe ($.concat ('main-conduct.css'))
-        .pipe ($.cssmin ())
+        .pipe($.if(isProd, $.cssmin()))
         .pipe (gulp.dest (paths.dist + '/css/'));
 
     return merge(page, codePage);
@@ -117,12 +119,12 @@ gulp.task ('html', function () {
             trace: true,
         }))
         .pipe ($.useref ())
-        .pipe ($.minifyHtml ({
+        .pipe($.if(isProd, $.minifyHtml ({
             quotes : true,
             empty  : true,
             spare  : true
-    }))
-    .pipe(gulp.dest (paths.dist))
+        })))
+        .pipe(gulp.dest (paths.dist))
 });
 
 gulp.task ('build', ['images', 'ico', 'fonts', 'koliseo', 'js', 'css', 'html']);
@@ -162,6 +164,12 @@ gulp.task('watch', function() {
 });
 
 
-gulp.task('default',  function (cb) {
+gulp.task('dev',  function (cb) {
+    isProd = false;
     runSequence ('build', 'watch', 'server:dist', cb);
+});
+
+gulp.task('default',  function (cb) {
+    isProd = true;
+    runSequence ('build', cb);
 });

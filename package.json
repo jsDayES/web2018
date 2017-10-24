@@ -1,9 +1,11 @@
 {
-  "name": "MadridJSDay",
+  "name": "JSDAYES2018",
   "version": "1.0.0",
-  "author": "Félix Zapata",
+  "author": "Juanfran Alcántara",
   "scripts": {
-    "updateWeb": "rm -rf jsdayes.github.io/* && cp -r dist/* jsdayes.github.io"
+    "updateWeb": "rm -rf jsdayes.github.io/* && cp -r dist/* jsdayes.github.io",
+    "start": "gulp dev",
+    "pro": "gulp"
   },
   "devDependencies": {
     "del": "^2.2.0",
@@ -14,7 +16,7 @@
     "gulp-cssmin": "^0.1.7",
     "gulp-gzip": "^1.4.0",
     "gulp-html-i18n": "^0.6.3",
-    "gulp-if": "^2.0.0",
+    "gulp-if": "^2.0.2",
     "gulp-imagemin": "^2.4.0",
     "gulp-load-plugins": "^1.2.0",
     "gulp-minify-html": "^1.0.5",
