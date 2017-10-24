@@ -115,7 +115,6 @@ gulp.task ('html', function () {
         .pipe($.nunjucksRender({
             path: ['templates/'] 
         }))  
-        .pipe ($.useref())
         .pipe($.if(isProd, $.minifyHtml({
             quotes : true,
             empty  : true,
