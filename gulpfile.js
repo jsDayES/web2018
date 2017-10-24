@@ -13,7 +13,7 @@ var addsrc      = require('gulp-add-src');
 
 var paths = {
     yaml   : './lang/**/*.yaml',
-    html   : './*.html',
+    html   : './templates/**/*.html',
     koliseo : ['./js/koliseo-agenda.js', './js/koliseo-polyfill.js'],
     fonts  : [
         './font-awesome/fonts/*.*',
@@ -105,21 +105,18 @@ gulp.task ('fonts', function () {
 });
 
 gulp.task ('html', function () {
-    return gulp.src ([
-            'index.html',
-            'codigodeconducta.html',
-            'codeofconduct.html',
-            'call-for-proposals-en.html',
-            'call-for-proposals-es.html'
-        ])
+    return gulp.src('templates/pages/*.html')       
         .pipe(i18n({
             createLangDirs: true,
             defaultLang: 'en',
             langDir: './lang',
             trace: true,
         }))
-        .pipe ($.useref ())
-        .pipe($.if(isProd, $.minifyHtml ({
+        .pipe($.nunjucksRender({
+            path: ['templates/'] 
+        }))  
+        .pipe ($.useref())
+        .pipe($.if(isProd, $.minifyHtml({
             quotes : true,
             empty  : true,
             spare  : true
