@@ -68,7 +68,7 @@ sponsors:
 sponsorsInfo:
     title: Modelos de patrocinios
     allowed: Permitido
-    notallowed: ${{ text.sponsorsInfo.notallowed }}$
+    notallowed: No permitido
     logo: Logotipo en web
     acknowledgment: Agradecimiento en evento
     printLogo: Logotipo en material impreso

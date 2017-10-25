@@ -2,6 +2,7 @@
 {% extends "layout.html" %}
 {% block content %}
 {% include "partials/header.html" %}
+{% include "partials/main-buy.html" %}
 <section id="home" class="home-section">
     <div class="home-inner shadow">
         <div class="container">
@@ -10,17 +11,17 @@
                     <div class="overImg welcome">
                         <div class="welcomeLogo">
                             <img src="/img/logo.png" class="img-logo" alt="Logo JSDay 2017">
-                            <span class="date">${{ text.home.date }}$</span>
+                            <span class="date">{{ text.home.date }}</span>
                         </div>
-                        <h1>${{ text.home.welcome }}$</h1>
+                        <h1>{{ text.home.welcome }}</h1>
                         <div class="flexslider intro-slider">
                             <ul class="slides">
-                                <li>${{ text.home.text1 }}$</li>
-                                <li class="large">${{ text.home.text2 }}$</li>
+                                <li>{{ text.home.text1 }}</li>
+                                <li class="large">{{ text.home.text2 }}</li>
                             </ul>
                         </div>
                     <div class="text-center">
-                        <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">${{ text.tickets.buyticket }}$</a>
+                        <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">{{ text.tickets.buyticket }}</a>
                     </div>                              
                     </div>
                 </div>
@@ -47,9 +48,9 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
-                <h2>${{ text.speakers.title }}$</h2>
+                <h2>{{ text.speakers.title }}</h2>
                 <span class="center-line"></span>
-                <p>${{ text.speakers.description }}$</p>
+                <p>{{ text.speakers.description }}</p>
             </div>
         </div>
 
@@ -512,10 +513,10 @@ Desarrollo software desde mi más tierna infancia. De pequeño aprendí BASIC y 
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
-                <h2>${{ text.schedule.title }}$</h2>
+                <h2>{{ text.schedule.title }}</h2>
                 <span class="center-line"></span>
-                <p>${{ text.schedule.description1 }}$</p>
-                <p>${{ text.schedule.description2 }}$</p>
+                <p>{{ text.schedule.description1 }}</p>
+                <p>{{ text.schedule.description2 }}</p>
             </div>
         </div>
         <div class="row">
@@ -556,13 +557,13 @@ loadJS('/js/koliseo-agenda.js', onLoad);
     <div class="container">
         <div class="row description">
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
-                <h2>${{ text.eventPresentation.title }}$</h2>
-                <p>${{ text.eventPresentation.description }}$</p>
-                <p>${{ text.eventPresentation.description2 }}$<p>
+                <h2>{{ text.eventPresentation.title }}</h2>
+                <p>{{ text.eventPresentation.description }}</p>
+                <p>{{ text.eventPresentation.description2 }}<p>
             </div>
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
-                <!-- <a target="_blank" href="/call-for-proposals-${{ _lang_ }}$.html" class="btn btn-dark btn-lg">${{ text.cfp.title }}$</a> -->
-                <!-- <a target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017/r4p/5765283616653312#/" class="btn btn-dark btn-lg">${{ text.cfp.title }}$</a> -->
+                <!-- <a target="_blank" href="/call-for-proposals-{{ _lang_ }}.html" class="btn btn-dark btn-lg">{{ text.cfp.title }}</a> -->
+                <!-- <a target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017/r4p/5765283616653312#/" class="btn btn-dark btn-lg">{{ text.cfp.title }}</a> -->
             </div>
         </div>
         <div class="row">
@@ -570,7 +571,7 @@ loadJS('/js/koliseo-agenda.js', onLoad);
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/UQ2tKT_tS90" frameborder="1" allowfullscreen></iframe>
             </div>
         </div>
-        <div class="row hide-${{ _lang_ }}$">
+        <div class="row hide-{{ _lang_ }}">
             <div class="col-sm-8 col-sm-offset-2">
                 <div class="flexslider testi-slider wow animated fadeInUp" data-wow-delay=".2s">
                     <br><br>
@@ -619,14 +620,14 @@ loadJS('/js/koliseo-agenda.js', onLoad);
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
-                <h2>${{text.cfp.join}}$</h2>
+                <h2>{{text.cfp.join}}</h2>
                 <span class="center-line"></span>
-                <p>${{text.cfp.description}}$</p>
+                <p>{{text.cfp.description}}</p>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
-                <h3>${{text.cfp.dates}}$</h3>
+                <h3>{{text.cfp.dates}}</h3>
             </div>
         </div>
         <div class="row">
@@ -634,15 +635,15 @@ loadJS('/js/koliseo-agenda.js', onLoad);
                 <ul class="proposals-style list-unstyled">
                     <li class="clearfix">
                         <div class="detail">
-                            <h4>${{text.cfp.limit}}$</h4>
-                            <span class="date">${{text.cfp.datelimit}}$</span>
+                            <h4>{{text.cfp.limit}}</h4>
+                            <span class="date">{{text.cfp.datelimit}}</span>
                         </div>
                     </li>
                     <li class="clearfix">
                         <div class="detail">
-                            <h4>${{text.cfp.notificationTitle}}$</h4>
-                            <span>${{text.cfp.notification}}$</span>
-                            <span class="date">${{text.cfp.notificationlimit}}$</span>
+                            <h4>{{text.cfp.notificationTitle}}</h4>
+                            <span>{{text.cfp.notification}}</span>
+                            <span class="date">{{text.cfp.notificationlimit}}</span>
                         </div>
                     </li>
                 </ul>
@@ -650,8 +651,8 @@ loadJS('/js/koliseo-agenda.js', onLoad);
         </div> <br><br>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
-                <a target="_blank" href="/call-for-proposals-${{ _lang_ }}$.html" class="btn btn-dark btn-lg">${{ text.cfp.title }}$</a>
-                <a target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017/r4p/5765283616653312#/" class="btn btn-dark btn-lg">${{ text.cfp.title }}$</a>
+                <a target="_blank" href="/call-for-proposals-{{ _lang_ }}.html" class="btn btn-dark btn-lg">{{ text.cfp.title }}</a>
+                <a target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017/r4p/5765283616653312#/" class="btn btn-dark btn-lg">{{ text.cfp.title }}</a>
             </div>
         </div>
     </div>
@@ -661,7 +662,7 @@ loadJS('/js/koliseo-agenda.js', onLoad);
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
-                <h2>${{ text.header.where }}$</h2>
+                <h2>{{ text.header.where }}</h2>
                 <span class="center-line"></span>
                 <!-- <p>
                 </p> -->
@@ -671,7 +672,7 @@ loadJS('/js/koliseo-agenda.js', onLoad);
             <div class="col-sm-5 col-sm-offset-1">
                 <h3>FUNDACIÓN PABLO VI</h3>
                 Paseo de Juan XXIII, 3. 28040 Madrid <br> <a target="_blank" href="http://www.fpablovi.org/index.php/auditorio">fpablovi.org</a> <br><br>
-                <h4><i class="fa fa-bus"></i> ${{ text.where.transport }}$</h4>
+                <h4><i class="fa fa-bus"></i> {{ text.where.transport }}</h4>
                 Metro -  línea 6 - Metropolitano<br>
                 Bus -  circular 1, circular 2, 132, L06<br><br>
                 <img class="img-responsive" src="/img/AuditorioCabecera01.jpg" width="460" alt="FUNDACIÓN PABLO VI">
@@ -687,52 +688,52 @@ loadJS('/js/koliseo-agenda.js', onLoad);
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
-                <h2>${{ text.tickets.title }}$</h2>
+                <h2>{{ text.tickets.title }}</h2>
                 <span class="center-line"></span>
             </div>
         </div>
         <div class="row tickets-row tickets-row-1">
             <div class="col-md-4 col-sm-6 workshop">
                 <div class="pricing-simple">
-                    <h3>${{ text.tickets.specialWorkshop }}$</h3>
-                    <h4>${{ text.tickets.specialWorkshopPrice }}$</h4>
+                    <h3>{{ text.tickets.specialWorkshop }}</h3>
+                    <h4>{{ text.tickets.specialWorkshopPrice }}</h4>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-check-square"></i>${{ text.tickets.specialWorkshopDesc }}$</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.specialWorkshopDesc }}</li>
                     </ul>
                     <div class="text-center">
-                        <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">${{ text.tickets.buy }}$</a>
+                        <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">{{ text.tickets.buy }}</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="pricing-simple">
-                    <h3>${{ text.tickets.normal }}$</h3>
-                    <h4>${{ text.tickets.normalTicketPrice }}$</h4>
+                    <h3>{{ text.tickets.normal }}</h3>
+                    <h4>{{ text.tickets.normalTicketPrice }}</h4>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-check-square"></i>${{ text.tickets.point1 }}$</li>
-                        <li><i class="fa fa-check-square"></i>${{ text.tickets.point2 }}$</li>
-                        <li><i class="fa fa-check-square"></i>${{ text.tickets.point3 }}$</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point1 }}</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point2 }}</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point3 }}</li>
                     </ul>
                     <div class="bottom">
                         <div class="text-center">
-                            <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">${{ text.tickets.buy }}$</a>
+                            <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">{{ text.tickets.buy }}</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="pricing-simple special">
-                    <h3>${{ text.tickets.special }}$</h3>
-                    <h4>${{ text.tickets.specialTicketPrice }}$</h4>
+                    <h3>{{ text.tickets.special }}</h3>
+                    <h4>{{ text.tickets.specialTicketPrice }}</h4>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-check-square"></i>${{ text.tickets.specialpoint }}$</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.specialpoint }}</li>
                     </ul>
                     <div class="bottom">
                         <div class="text-center">
-                            <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">${{ text.tickets.buy }}$</a>
+                            <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">{{ text.tickets.buy }}</a>
                         </div>
                     </div>
-                    <p class="warning">${{ text.tickets.warning }}$</p>
+                    <p class="warning">{{ text.tickets.warning }}</p>
                 </div>
             </div>
             
@@ -740,35 +741,35 @@ loadJS('/js/koliseo-agenda.js', onLoad);
         <div class="row tickets-row">
             <div class="col-md-4 col-sm-6">
                 <div class="pricing-simple popular">
-                    <h3>${{ text.tickets.superearly }}$</h3>
-                    <h4>${{ text.tickets.superearlyprice }}$</h4>
+                    <h3>{{ text.tickets.superearly }}</h3>
+                    <h4>{{ text.tickets.superearlyprice }}</h4>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-check-square"></i>${{ text.tickets.point1 }}$</li>
-                        <li><i class="fa fa-check-square"></i>${{ text.tickets.point2 }}$</li>
-                        <li><i class="fa fa-check-square"></i>${{ text.tickets.point3 }}$</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point1 }}</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point2 }}</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point3 }}</li>
                     </ul>
                     <!-- <div class="text-center">
-                        <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">${{ text.tickets.buy }}$</a>
+                        <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">{{ text.tickets.buy }}</a>
                     </div> -->
                     <div class="bottom">
-                        <p><strong>${{ text.tickets.soldout }}$</strong></p>
+                        <p><strong>{{ text.tickets.soldout }}</strong></p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6">
                 <div class="pricing-simple popular">
-                    <h3>${{ text.tickets.early }}$</h3>
-                    <h4>${{ text.tickets.earlyprice }}$</h4>
+                    <h3>{{ text.tickets.early }}</h3>
+                    <h4>{{ text.tickets.earlyprice }}</h4>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-check-square"></i>${{ text.tickets.point1 }}$</li>
-                        <li><i class="fa fa-check-square"></i>${{ text.tickets.point2 }}$</li>
-                        <li><i class="fa fa-check-square"></i>${{ text.tickets.point3 }}$</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point1 }}</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point2 }}</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point3 }}</li>
                     </ul>
                     <div class="bottom">
-                        <p><strong>${{ text.tickets.soldout }}$</strong></p>
+                        <p><strong>{{ text.tickets.soldout }}</strong></p>
                     </div>
                     <!-- <div class="text-center">
-                        <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">${{ text.tickets.buy }}$</a>
+                        <a class="btn btn-lg btn-yellow" target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017">{{ text.tickets.buy }}</a>
                     </div> -->
                 </div>
             </div>
@@ -813,10 +814,10 @@ loadJS('/js/koliseo-agenda.js', onLoad);
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
                 <div class="overImg">
-                    <h2>${{ text.contact.title }}$</h2>
-                    <p>${{ text.contact.description }}$</p><br /><br />
+                    <h2>{{ text.contact.title }}</h2>
+                    <p>{{ text.contact.description }}</p><br /><br />
                     <div class="text-center">
-                        <a class="btn btn-lg btn-yellow" href="mailto:hola@jsday.es">${{ text.contact.button }}$</a>
+                        <a class="btn btn-lg btn-yellow" href="mailto:hola@jsday.es">{{ text.contact.button }}</a>
                     </div>
                 </div>
             </div>
@@ -829,9 +830,9 @@ loadJS('/js/koliseo-agenda.js', onLoad);
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
-                <h3>${{ text.organizers.title }}$</h3>
+                <h3>{{ text.organizers.title }}</h3>
                 <span class="center-line"></span>
-                <p>${{ text.organizers.description }}$</p>
+                <p>{{ text.organizers.description }}</p>
             </div>
         </div>
         <div class="row">
@@ -865,9 +866,9 @@ loadJS('/js/koliseo-agenda.js', onLoad);
         </div>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 center-title text-center codigo">
-                <h3>${{ text.codeOfConduct.title }}$</h3>
+                <h3>{{ text.codeOfConduct.title }}</h3>
                 <span class="center-line"></span>
-                <p>${{ text.codeOfConduct.description }}$</p>
+                <p>{{ text.codeOfConduct.description }}</p>
             </div>
         </div>
     </div>
@@ -878,9 +879,9 @@ loadJS('/js/koliseo-agenda.js', onLoad);
     <div class="container">
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
-                <h3>${{ text.sponsors.title }}$</h3>
+                <h3>{{ text.sponsors.title }}</h3>
                 <span class="center-line"></span>
-                <p>${{ text.sponsors.description }}$</p>
+                <p>{{ text.sponsors.description }}</p>
             </div>
         </div>
 
@@ -1115,7 +1116,7 @@ loadJS('/js/koliseo-agenda.js', onLoad);
 
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 center-title text-center">
-                <h4>${{ text.sponsorsInfo.title }}$</h4>
+                <h4>{{ text.sponsorsInfo.title }}</h4>
                 <table id="sponsor-mobile-table" class="table">
                     <thead>
                         <tr>
@@ -1128,112 +1129,112 @@ loadJS('/js/koliseo-agenda.js', onLoad);
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row" colspan="5">${{ text.sponsorsInfo.logo }}$</th>
+                            <th scope="row" colspan="5">{{ text.sponsorsInfo.logo }}</th>
                         </tr>
                         <tr>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row" colspan="5">${{ text.sponsorsInfo.acknowledgment }}$</th>
-                        </tr>
-                        <tr>
-
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" colspan="5">${{ text.sponsorsInfo.printLogo }}$</th>
+                            <th scope="row" colspan="5">{{ text.sponsorsInfo.acknowledgment }}</th>
                         </tr>
                         <tr>
 
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row" colspan="5">${{ text.sponsorsInfo.logoscreen }}$</th>
-                        </tr>
-                        <tr>
-
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" colspan="5">${{ text.sponsorsInfo.table }}$</th>
+                            <th scope="row" colspan="5">{{ text.sponsorsInfo.printLogo }}</th>
                         </tr>
                         <tr>
 
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row" colspan="5">${{ text.sponsorsInfo.presentation }}$</th>
-                        </tr>
-                        <tr>
-
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" colspan="5">${{ text.sponsorsInfo.welcomePack }}$</th>
+                            <th scope="row" colspan="5">{{ text.sponsorsInfo.logoscreen }}</th>
                         </tr>
                         <tr>
 
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row" colspan="5">${{ text.sponsorsInfo.layards }}$</th>
-                        </tr>
-                        <tr>
-
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                        </tr>
-                        <tr>
-                            <th scope="row" colspan="5">${{ text.sponsorsInfo.dinner }}$</th>
+                            <th scope="row" colspan="5">{{ text.sponsorsInfo.table }}</th>
                         </tr>
                         <tr>
 
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td>1 ${{ text.sponsorsInfo.person }}$</td>
-                            <td>1 ${{ text.sponsorsInfo.person }}$</td>
-                            <td>2 ${{ text.sponsorsInfo.people }}$</td>
-                            <td>3 ${{ text.sponsorsInfo.people }}$</td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row" colspan="5">${{ text.sponsorsInfo.sponsorticket }}$</th>
+                            <th scope="row" colspan="5">{{ text.sponsorsInfo.presentation }}</th>
                         </tr>
                         <tr>
-                            <td>2 ${{ text.sponsorsInfo.ticket }}$</td>
-                            <td>4 ${{ text.sponsorsInfo.ticket }}$</td>
-                            <td>5 ${{ text.sponsorsInfo.ticket }}$</td>
-                            <td>6 ${{ text.sponsorsInfo.tickets }}$</td>
-                            <td>8 ${{ text.sponsorsInfo.tickets }}$</td>
+
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="5">{{ text.sponsorsInfo.welcomePack }}</th>
+                        </tr>
+                        <tr>
+
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="5">{{ text.sponsorsInfo.layards }}</th>
+                        </tr>
+                        <tr>
+
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="5">{{ text.sponsorsInfo.dinner }}</th>
+                        </tr>
+                        <tr>
+
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td>1 {{ text.sponsorsInfo.person }}</td>
+                            <td>1 {{ text.sponsorsInfo.person }}</td>
+                            <td>2 {{ text.sponsorsInfo.people }}</td>
+                            <td>3 {{ text.sponsorsInfo.people }}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="5">{{ text.sponsorsInfo.sponsorticket }}</th>
+                        </tr>
+                        <tr>
+                            <td>2 {{ text.sponsorsInfo.ticket }}</td>
+                            <td>4 {{ text.sponsorsInfo.ticket }}</td>
+                            <td>5 {{ text.sponsorsInfo.ticket }}</td>
+                            <td>6 {{ text.sponsorsInfo.tickets }}</td>
+                            <td>8 {{ text.sponsorsInfo.tickets }}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1250,84 +1251,84 @@ loadJS('/js/koliseo-agenda.js', onLoad);
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">${{ text.sponsorsInfo.logo }}$</th>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <th scope="row">{{ text.sponsorsInfo.logo }}</th>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row">${{ text.sponsorsInfo.acknowledgment }}$</th>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <th scope="row">{{ text.sponsorsInfo.acknowledgment }}</th>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row">${{ text.sponsorsInfo.printLogo }}$</th>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <th scope="row">{{ text.sponsorsInfo.printLogo }}</th>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row">${{ text.sponsorsInfo.logoscreen }}$</th>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <th scope="row">{{ text.sponsorsInfo.logoscreen }}</th>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row">${{ text.sponsorsInfo.table }}$</th>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <th scope="row">{{ text.sponsorsInfo.table }}</th>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row">${{ text.sponsorsInfo.presentation }}$</th>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <th scope="row">{{ text.sponsorsInfo.presentation }}</th>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row">${{ text.sponsorsInfo.welcomePack }}$</th>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <th scope="row">{{ text.sponsorsInfo.welcomePack }}</th>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row">${{ text.sponsorsInfo.layards }}$</th>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.allowed }}$</span> <i class="fa fa-check"></i></td>
+                            <th scope="row">{{ text.sponsorsInfo.layards }}</th>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
-                            <th scope="row">${{ text.sponsorsInfo.dinner }}$</th>
-                            <td><span class="sr-only">${{ text.sponsorsInfo.notallowed }}$</span> </td>
-                            <td>1 ${{ text.sponsorsInfo.person }}$</td>
-                            <td>1 ${{ text.sponsorsInfo.person }}$</td>
-                            <td>2 ${{ text.sponsorsInfo.people }}$</td>
-                            <td>3 ${{ text.sponsorsInfo.people }}$</td>
+                            <th scope="row">{{ text.sponsorsInfo.dinner }}</th>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td>1 {{ text.sponsorsInfo.person }}</td>
+                            <td>1 {{ text.sponsorsInfo.person }}</td>
+                            <td>2 {{ text.sponsorsInfo.people }}</td>
+                            <td>3 {{ text.sponsorsInfo.people }}</td>
                         </tr>
                         <tr>
-                            <th scope="row">${{ text.sponsorsInfo.freetickets }}$</th>
-                            <td>2 ${{ text.sponsorsInfo.ticket }}$</td>
-                            <td>4 ${{ text.sponsorsInfo.ticket }}$</td>
-                            <td>5 ${{ text.sponsorsInfo.ticket }}$</td>
-                            <td>6 ${{ text.sponsorsInfo.tickets }}$</td>
-                            <td>8 ${{ text.sponsorsInfo.tickets }}$</td>
+                            <th scope="row">{{ text.sponsorsInfo.freetickets }}</th>
+                            <td>2 {{ text.sponsorsInfo.ticket }}</td>
+                            <td>4 {{ text.sponsorsInfo.ticket }}</td>
+                            <td>5 {{ text.sponsorsInfo.ticket }}</td>
+                            <td>6 {{ text.sponsorsInfo.tickets }}</td>
+                            <td>8 {{ text.sponsorsInfo.tickets }}</td>
                         </tr>
                     </tbody>
                 </table>
@@ -1401,7 +1402,7 @@ loadJS('/js/koliseo-agenda.js', onLoad);
         </div>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
-                <a href="mailto:hola@jsday.es" class="btn btn-dark btn-lg">${{ text.sponsors.button }}$</a>
+                <a href="mailto:hola@jsday.es" class="btn btn-dark btn-lg">{{ text.sponsors.button }}</a>
             </div>
         </div>
 
@@ -1413,12 +1414,12 @@ loadJS('/js/koliseo-agenda.js', onLoad);
     <div class="container">
         <div class=" text-center">
             <ul class="list-inline social">
-                <li><a href="https://twitter.com/jsdayes"><span class="sr-only">${{ text.footer.twitter }}$</span> <i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UClqqpvRAqxpLT27rj7vKfOA"><span class="sr-only">${{ text.footer.youtube }}$</span> <i class="fa fa-youtube"></i></a></li>
-                <li><a href="https://plus.google.com/+JsdayEsMadrid"><span class="sr-only">${{ text.footer.google }}$</span> <i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://twitter.com/jsdayes"><span class="sr-only">{{ text.footer.twitter }}</span> <i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UClqqpvRAqxpLT27rj7vKfOA"><span class="sr-only">{{ text.footer.youtube }}</span> <i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://plus.google.com/+JsdayEsMadrid"><span class="sr-only">{{ text.footer.google }}</span> <i class="fa fa-google-plus"></i></a></li>
             </ul>
         </div>
     </div>
-    <span>${{ text.footer.copyright }}$</span>
+    <span>{{ text.footer.copyright }}</span>
 </footer>
 {% endblock %}

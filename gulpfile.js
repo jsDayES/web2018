@@ -8,8 +8,11 @@ var runSequence = require ('run-sequence');
 var webserver   = require ('gulp-webserver');
 var merge       = require ('merge-stream');
 var del         = require ('del');
-var i18n        = require ('gulp-html-i18n');
 var addsrc      = require('gulp-add-src');
+var YAML = require('yamljs');
+
+var langEn = {text: YAML.load('./lang/en/text.yaml')};
+var langEs = {text: YAML.load('./lang/es/text.yaml')};
 
 var paths = {
     yaml   : './lang/**/*.yaml',
@@ -106,14 +109,9 @@ gulp.task ('fonts', function () {
 
 gulp.task ('html', function () {
     return gulp.src('templates/pages/*.html')       
-        .pipe(i18n({
-            createLangDirs: true,
-            defaultLang: 'en',
-            langDir: './lang',
-            trace: true,
-        }))
         .pipe($.nunjucksRender({
-            path: ['templates/'] 
+            path: ['templates/'],
+            data: langEn
         }))  
         .pipe($.if(isProd, $.minifyHtml({
             quotes : true,

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="${{ _lang_ }}$">
+<html lang="{{ _lang_ }}">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,29 +20,29 @@
         <link rel="stylesheet" type="text/css" href="css/custom.css" media="screen">
         <!-- endbuild-->
     </head>
-    <body data-spy="scroll" class="lang-${{ _lang_ }}$">
+    <body data-spy="scroll" class="lang-{{ _lang_ }}">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
-                        <span class="sr-only">${{ text.header.changeNavState }}$</span>
+                        <span class="sr-only">{{ text.header.changeNavState }}</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">${{ text.title }}$</a>
+                    <a class="navbar-brand" href="#">{{ text.title }}</a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav scroll-to navbar-right">
-                        <li><a href="/#home">${{ text.header.home }}$</a></li>
-                         <li><a href="/#proposals">${{ text.header.cfp }}$</a></li>
-                        <!-- <li><a href="#streaming">${{ text.header.streaming }}$</a></li> -->
-                        <!-- <li><a href="#speakers">${{ text.header.speakers }}$</a></li>
-                        <li><a href="#schedule">${{ text.header.schedule }}$</a></li> -->
-                        <!-- <li><a href="/#where">${{ text.header.where }}$</a></li> -->
-                        <!-- <li><a href="#tickets">${{ text.header.tickets }}$</a></li> -->
-                        <li><a href="/#organizers">${{ text.header.organizers }}$</a></li>
-                        <li><a href="/#sponsors">${{ text.header.sponsors }}$</a></li>
+                        <li><a href="/#home">{{ text.header.home }}</a></li>
+                         <li><a href="/#proposals">{{ text.header.cfp }}</a></li>
+                        <!-- <li><a href="#streaming">{{ text.header.streaming }}</a></li> -->
+                        <!-- <li><a href="#speakers">{{ text.header.speakers }}</a></li>
+                        <li><a href="#schedule">{{ text.header.schedule }}</a></li> -->
+                        <!-- <li><a href="/#where">{{ text.header.where }}</a></li> -->
+                        <!-- <li><a href="#tickets">{{ text.header.tickets }}</a></li> -->
+                        <li><a href="/#organizers">{{ text.header.organizers }}</a></li>
+                        <li><a href="/#sponsors">{{ text.header.sponsors }}</a></li>
                     </ul>
                 </div>
             </div>
