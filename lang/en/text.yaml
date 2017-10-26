@@ -18,7 +18,7 @@ home:
     welcome: Welcome to JSDayES 2017
     text1: Talks & Workshops
     text2: JavaScript, NodeJS, AngularJS, Polymer...
-    date: 12 & 13 May 2017 <br/> Madrid
+    date: 19 May 2017 <br/> Madrid
 
 speakers:
     title: Speakers
@@ -113,4 +113,4 @@ footer:
     twitter: JSDayES Twitter
     youtube: JSDayES Youtube
     google: JSDayES Google Plus
-    copyright: JSDayES - 3rd Edition &copy; May 2017
+    copyright: JSDayES - 4rd Edition &copy; May 2017

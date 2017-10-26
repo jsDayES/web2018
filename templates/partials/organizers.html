@@ -4,7 +4,7 @@
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
                 <h3>{{ text.organizers.title }}</h3>
                 <span class="center-line"></span>
-                <p>{{ text.organizers.description }}</p>
+                <p>{{ text.organizers.description | safe }}</p>
             </div>
         </div>
         <div class="row">
@@ -29,19 +29,14 @@
                         <a href="http://www.meetup.com/es-ES/AngularJS_Madrid/"><img src="/img/organizacion/organizer-1.png" width="242" height="86" class="img-responsive" alt="AngularJS Madrid"></a>
                     </div>
                 </li>
-                <!-- <li class="item">
-                    <div class="organizers-box">
-                        <a href="http://www.gacetatecnologica.com/"><img src="img/organizacion/organizer-5.png" class="img-responsive" width="268" height="91" alt="Gaceta Tecnológica"></a>
-                    </div>
-                </li> -->
             </ul>
         </div>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 center-title text-center codigo">
                 <h3>{{ text.codeOfConduct.title }}</h3>
                 <span class="center-line"></span>
-                <p>{{ text.codeOfConduct.description }}</p>
+                <p>{{ text.codeOfConduct.description | safe }}</p>
             </div>
         </div>
     </div>
-</section><!--organizers-->
+</section>

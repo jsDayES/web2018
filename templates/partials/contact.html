@@ -4,7 +4,7 @@
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
                 <div class="overImg">
                     <h2>{{ text.contact.title }}</h2>
-                    <p>{{ text.contact.description }}</p><br /><br />
+                    <p>{{ text.contact.description | safe }}</p><br /><br />
                     <div class="text-center">
                         <a class="btn btn-lg btn-yellow" href="mailto:hola@jsday.es">{{ text.contact.button }}</a>
                     </div>
