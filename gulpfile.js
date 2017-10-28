@@ -40,7 +40,6 @@ var paths = {
         './font-awesome/css/font-awesome.min.css',
         'css/flexslider.css',
         'css/owl.carousel.css',
-        'css/jquery-ui.min.css',
         'css/style.css',
         'css/kagenda-styles.css',
         'css/custom.css',
@@ -53,18 +52,9 @@ var paths = {
     js     : [
         './js/jquery.min.js',
         './bootstrap/./js/bootstrap.min.js',
-        './js/jquery.easing.1.3.min.js',
         './js/jquery.backstretch.min.js',
-        './js/jquery.flexslider-min.js',
         './js/owl.carousel.min.js',
-        './js/masonry.pkgd.min.js',
-        './js/jquery-ui.min.js',
-        './js/pace.min.js',
-        './js/wow.min.js',
-        './js/jqBootstrapValidation.js',
-        './node_modules/blazy/blazy.js',
-        './js/custom.js',
-        './js/jquery.countdown.min.js'
+        './js/custom.js'
     ],
     images : './img/**/*',
     dist   : './dist/'
