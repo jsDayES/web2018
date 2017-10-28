@@ -237,3 +237,7 @@ ul.speakers { display:flex; justify-content: flex-start; flex-wrap:wrap; list-st
         min-width: auto;
     }
 }
+/* 
+.backstretch {
+    filter:blur(5px);
+} */
