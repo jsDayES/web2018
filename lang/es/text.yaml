@@ -11,6 +11,7 @@ header:
     organizers: Organización
     sponsors: Sponsors
     cfp: CfP
+    codeOfConduct: Código de conducta
 
 where:
     transport: Transporte
@@ -60,7 +61,7 @@ organizers:
 
 codeOfConduct:
     title: Código de conducta
-    description: El evento se regirá por este <a href="/codigodeconducta.html">código de conducta</a>, que puede resumirse en: respeta a los demás.
+    description: El evento se regirá por este <a href="/code-of-conduct-es.html">código de conducta</a>, que puede resumirse en: respeta a los demás.
 
 sponsors:
     title: Sponsors

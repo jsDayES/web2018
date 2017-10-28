@@ -40,10 +40,13 @@
                 {% if sections.contact %}
                 <li><a href="/#contact">{{ text.header.contact }}</a></li>
                 {% endif %}
-                
 
                 {% if sections.sponsors %}
                 <li><a href="/#sponsors">{{ text.header.sponsors }}</a></li>
+                {% endif %}
+
+                {% if sections.codeOfConduct %}
+                <li><a href="/code-of-conduct-{{lang}}.html">{{ text.header.codeOfConduct }}</a></li>
                 {% endif %}
             </ul>
         </div>

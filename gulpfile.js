@@ -22,7 +22,8 @@ var config = {
         tickets: false,
         contact: true,
         organizers: true,
-        sponsors: false
+        sponsors: false,
+        codeOfConduct: true
     }
 };
 
