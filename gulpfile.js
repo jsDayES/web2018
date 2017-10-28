@@ -12,6 +12,7 @@ var addsrc      = require('gulp-add-src');
 var YAML = require('yamljs');
 
 var config = {
+    cfpMode: true,
     sections: {
         streaming: false,
         speakers: false,
@@ -123,6 +124,7 @@ gulp.task ('html', function () {
     var langEs = YAML.load('./lang/es/text.yaml');
 
     config.text = langEn;
+    config.lang = 'en';
 
     return gulp.src('templates/pages/*.html')       
         .pipe($.nunjucksRender({

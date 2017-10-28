@@ -4,7 +4,7 @@
             <div class="col-sm-6 col-sm-offset-3 center-title text-center">
                 <h2>{{text.cfp.join}}</h2>
                 <span class="center-line"></span>
-                <p>{{text.cfp.description}}</p>
+                <p>{{text.cfp.description | safe}}</p>
             </div>
         </div>
         <div class="row">
@@ -33,8 +33,8 @@
         </div> <br><br>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
-                <a target="_blank" href="/call-for-proposals-{{ _lang_ }}.html" class="btn btn-dark btn-lg">{{ text.cfp.title }}</a>
-                <a target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017/r4p/5765283616653312#/" class="btn btn-dark btn-lg">{{ text.cfp.title }}</a>
+                <a target="_blank" href="https://www.koliseo.com/jsdayes/jsdayes-2017/r4p/5765283616653312#/" class="btn btn-yellow btn-lg">{{ text.cfp.title }}</a>
+                <a href="/call-for-proposals-{{lang}}.html" class="btn btn-yellow btn-lg">{{ text.cfp.learn }}</a>
             </div>
         </div>
     </div>

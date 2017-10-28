@@ -37,6 +37,7 @@ cfp:
     notification: Date when we'll communicate accepted proposals.
     notificationTitle: Notification of acceptance
     notificationlimit: February 2018
+    learn: Learn more about the CFP
 
 eventPresentation:
     title: <span class="name">JSDayES</span> Spain’s largest Javascript Conference

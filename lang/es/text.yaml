@@ -37,6 +37,7 @@ cfp:
     notification: Fecha en que comunicaremos las propuestas aceptadas
     notificationTitle: Notificación de Aceptación
     notificationlimit: 02/2018
+    learn: Más información del CFP
 
 eventPresentation:
     title: <span class="name">JSDayES</span> la conferencia de JavaScript más grande de España

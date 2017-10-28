@@ -4,7 +4,13 @@
 {% extends "layout.html" %}
 {% block content %}
 {% include "partials/header.html" %}
+
+{% if cfpMode %}
+{% include "partials/main-cfp.html" %}
+{% include "partials/proposals.html" %}
+{% else %}
 {% include "partials/main-buy.html" %}
+{% endif %}
 
 {% if sections.streaming %}
 {% include "partials/streaming.html" %}
@@ -21,8 +27,6 @@
 {% if sections.presentation %}
 {% include "partials/presentation.html" %}
 {% endif %}
-
-{% include "partials/proposals.html" %}
 
 {% if sections.where %}
 {% include "partials/where.html" %}
