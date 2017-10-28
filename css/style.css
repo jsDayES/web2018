@@ -16,7 +16,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 a {
-  color: #f2b84b; }
+  color: #fdc12c; }
   a i {
     margin-left: 5px; }
   a:hover {
@@ -83,7 +83,7 @@ h1, h1, h3, h4, h5, h6 {
     margin-top: -1px; }
 
 .btn-yellow {
-  background-color: #f2b84b;
+  background-color: #fdc12c;
   color: #fff; }
   .btn-yellow:hover, .btn-yellow:focus {
     background-color: #333;
@@ -91,7 +91,7 @@ h1, h1, h3, h4, h5, h6 {
 
 .btn-light {
   background-color: #fff;
-  color: #f2b84b; }
+  color: #fdc12c; }
   .btn-light:hover, .btn-light:focus {
     background-color: #333;
     color: #fff; }
@@ -114,10 +114,10 @@ h1, h1, h3, h4, h5, h6 {
   font-size: 13px; }
 
 .navbar-default .navbar-nav > li > a:hover {
-  color: #f2b84b; }
+  color: #fdc12c; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-  color: #f2b84b;
+  color: #fdc12c;
   background-color: transparent; }
 
 .navbar-default .navbar-brand {
@@ -141,11 +141,11 @@ h1, h1, h3, h4, h5, h6 {
   color: #333; }
 
 .shrink.navbar-default .navbar-nav > .active > a, .shrink.navbar-default .navbar-nav > .active > a:focus, .shrink.navbar-default .navbar-nav > .active > a:hover {
-  color: #f2b84b;
+  color: #fdc12c;
   background-color: transparent; }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
-  color: #f2b84b;
+  color: #fdc12c;
   background-color: transparent; }
 
 .navbar-default.shrink .navbar-brand {
@@ -292,7 +292,7 @@ Banner style
 
 **********************/
 .box-1 {
-    background-color: #f2b84b;
+    background-color: #fdc12c;
 }
 .banner {
   padding: 80px 0; }
@@ -362,7 +362,7 @@ Previous event style
     line-height: 30px;
     padding: 0px 30px; }
   #event-presentation .flexslider .slides li h6 {
-    color: #f2b84b; }
+    color: #fdc12c; }
   #event-presentation .flexslider .slides li img {
     width: 90px;
     height: 90px;
@@ -423,7 +423,7 @@ Schedule style
         font-size: 16px;
         font-weight: 600; }
       .schedule-style li .detail .time {
-        color: #f2b84b;
+        color: #fdc12c;
         text-align: right;
         display: block;
         font-size: 20px;
@@ -577,7 +577,7 @@ Tickets style
   -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
   -ms-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
-  background-color: #f2b84b;
+  background-color: #fdc12c;
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -631,7 +631,7 @@ Sponsors style
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     border-radius: 0px;
-    -background-color: #f2b84b;
+    -background-color: #fdc12c;
     background-color: #fff;}
 
 /**********************
@@ -671,11 +671,11 @@ Organizers style
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     border-radius: 0px;
-    -background-color: #f2b84b;
+    -background-color: #fdc12c;
     background-color: #fff;}
 
 .owl-theme .owl-controls .owl-buttons div {
-  -background: #f2b84b !important;
+  -background: #fdc12c !important;
    background: #fff !important;
    z-index: -9000;
   -webkit-border-radius: 0px;
