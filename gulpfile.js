@@ -17,7 +17,7 @@ var config = {
         streaming: false,
         speakers: false,
         schedule: false,
-        presentation: true,
+        presentation: false,
         where: false,
         tickets: false,
         contact: true,

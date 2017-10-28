@@ -9,11 +9,18 @@
 if ($('.backstretch-enabled').length) {
     $.backstretch([
         "/img/gallery1/img-1.jpg",
-        "/img/gallery1/JSDAYES2016-301.jpg",
+        "/img/gallery1/JSDAY2017024.jpg",
+        "/img/gallery1/JSDAY2017153.jpg",
+        "/img/gallery1/JSDAY2017252.jpg",
+        "/img/gallery1/JSDAYES2016-131.jpg",
         "/img/gallery1/JSDAYES2016-240.jpg",
+        "/img/gallery1/JSDAYES2016-312.jpg",
         "/img/gallery1/img-3.jpg",
-        "/img/gallery1/JSDAYES2016-3.jpg",
-        "/img/gallery1/JSDAYES2016-312.jpg"
+        "/img/gallery1/JSDAY2017156.jpg",
+        "/img/gallery1/JSDAYES009.jpg",
+        "/img/gallery1/JSDAYES2016-137.jpg",
+        "/img/gallery1/JSDAYES2016-301.jpg",
+        "/img/gallery1/JSDAYES2016-3.jpg"
         ], {
             lazyload: true,
             fade: 750,
