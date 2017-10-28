@@ -1,2 +1,9 @@
-.codigoPage { padding:2em; text-align:left; font-size:1.25em; line-height:1.3em }
+.codigoPage {
+    padding: 10rem 2em 2rem;
+    text-align:left;
+    font-size:1.25em;
+    line-height:1.3em;
+    width: 980px;
+    margin: 0 auto;
+}
 .codigoPage a {  color:#89621a }

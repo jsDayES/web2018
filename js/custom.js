@@ -6,18 +6,20 @@
 
 //backstretch
 
-$.backstretch([
-   "/img/gallery1/img-1.jpg",
-   "/img/gallery1/JSDAYES2016-301.jpg",
-   "/img/gallery1/JSDAYES2016-240.jpg",
-   "/img/gallery1/img-3.jpg",
-   "/img/gallery1/JSDAYES2016-3.jpg",
-   "/img/gallery1/JSDAYES2016-312.jpg"
-], {
-    lazyload: true,
-    fade: 750,
-    duration: 4000
-});
+if ($('.backstretch-enabled').length) {
+    $.backstretch([
+        "/img/gallery1/img-1.jpg",
+        "/img/gallery1/JSDAYES2016-301.jpg",
+        "/img/gallery1/JSDAYES2016-240.jpg",
+        "/img/gallery1/img-3.jpg",
+        "/img/gallery1/JSDAYES2016-3.jpg",
+        "/img/gallery1/JSDAYES2016-312.jpg"
+        ], {
+            lazyload: true,
+            fade: 750,
+            duration: 4000
+        });
+}
 
 // var bLazy = new Blazy({
 //     selector: 'img, iframe',

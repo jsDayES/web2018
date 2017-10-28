@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Great+Vibes">
         <link rel="stylesheet" type="text/css" href="/css/main.css">
     </head>
-    <body data-spy="scroll" class="lang-{{ _lang_ }}">
+    <body data-spy="scroll" class="{% if backstretch %}backstretch-enabled{% endif %} lang-{{ _lang_ }}">
         {% block content %} {% endblock %}
 
         <script src="/js/main.js"></script>
