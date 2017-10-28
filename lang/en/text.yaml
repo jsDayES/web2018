@@ -1,10 +1,11 @@
-title: JSDayES 2017
+title: JSDayES 2018
 header:
     changeNavState: Change navigation state
     home: Home
     streaming: Streaming
     speakers: Speakers
     schedule: Schedule
+    contact: Contact
     where: Where
     tickets: Tickets
     organizers: Organizers
@@ -15,10 +16,10 @@ where:
     transport: Transport
 
 home:
-    welcome: Welcome to JSDayES 2017
+    welcome: Welcome to JSDayES 2018
     text1: Talks & Workshops
     text2: JavaScript, NodeJS, AngularJS, Polymer...
-    date: 19 May 2017 <br/> Madrid
+    date: 19 May 2018 <br/> Madrid
 
 speakers:
     title: Speakers
@@ -32,10 +33,10 @@ cfp:
     description: Do you want to give a talk? <br> Do not think about it. Access and sign up!
     dates: Important dates
     limit: Limit for submitting proposals.
-    datelimit: January 31th, 2017
+    datelimit: January 31th, 2018
     notification: Date when we'll communicate accepted proposals.
     notificationTitle: Notification of acceptance
-    notificationlimit: February 2017
+    notificationlimit: February 2018
 
 eventPresentation:
     title: <span class="name">JSDayES</span> Spain’s largest Javascript Conference
@@ -113,4 +114,4 @@ footer:
     twitter: JSDayES Twitter
     youtube: JSDayES Youtube
     google: JSDayES Google Plus
-    copyright: JSDayES - 4rd Edition &copy; May 2017
+    copyright: JSDayES - 4rd Edition &copy; May 2018

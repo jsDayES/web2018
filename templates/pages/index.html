@@ -5,15 +5,44 @@
 {% block content %}
 {% include "partials/header.html" %}
 {% include "partials/main-buy.html" %}
-{#  {% include "partials/streaming.html" %} #}
-{# {% include "partials/speakers.html" %} #}
-{# {% include "partials/schedule.html" %} #}
+
+{% if sections.streaming %}
+{% include "partials/streaming.html" %}
+{% endif %}
+
+{% if sections.speakers %}
+{% include "partials/speakers.html" %}
+{% endif %}
+
+{% if sections.schedule %}
+{% include "partials/schedule.html" %}
+{% endif %}
+
+{% if sections.presentation %}
 {% include "partials/presentation.html" %}
+{% endif %}
+
 {% include "partials/proposals.html" %}
+
+{% if sections.where %}
 {% include "partials/where.html" %}
-{# {% include "partials/tickets.html" %} #}
+{% endif %}
+
+{% if sections.tickets %}
+{% include "partials/tickets.html" %}
+{% endif %}
+
+{% if sections.contact %}
 {% include "partials/contact.html" %}
+{% endif %}
+
+{% if sections.organizers %}
 {% include "partials/organizers.html" %}
-{# {% include "partials/sponsors.html" %} #}
+{% endif %}
+
+{% if sections.sponsors %}
+{% include "partials/sponsors.html" %}
+{% endif %}
+
 {% include "partials/footer.html" %}
 {% endblock %}

@@ -11,8 +11,24 @@ var del         = require ('del');
 var addsrc      = require('gulp-add-src');
 var YAML = require('yamljs');
 
-var langEn = {text: YAML.load('./lang/en/text.yaml')};
-var langEs = {text: YAML.load('./lang/es/text.yaml')};
+var langEn = YAML.load('./lang/en/text.yaml');
+var langEs = YAML.load('./lang/es/text.yaml');
+
+
+var config = {
+    text: langEn,
+    sections: {
+        streaming: false,
+        speakers: false,
+        schedule: false,
+        presentation: true,
+        where: false,
+        tickets: false,
+        contact: true,
+        organizers: true,
+        sponsors: false
+    }
+};
 
 var paths = {
     yaml   : './lang/**/*.yaml',
@@ -111,7 +127,7 @@ gulp.task ('html', function () {
     return gulp.src('templates/pages/*.html')       
         .pipe($.nunjucksRender({
             path: ['templates/'],
-            data: langEn
+            data: config
         }))  
         .pipe($.if(isProd, $.minifyHtml({
             quotes : true,

@@ -1,4 +1,4 @@
-title: JSDayES 2017
+title: JSDayES 2018
 header:
     changeNavState: Cambiar estado navegación
     home: Home
@@ -6,6 +6,7 @@ header:
     speakers: Speakers
     schedule: Programa
     where: Dónde
+    contact: Contacto
     tickets: Entradas
     organizers: Organización
     sponsors: Sponsors
@@ -15,10 +16,10 @@ where:
     transport: Transporte
 
 home:
-    welcome: Bienvenido a JSDayES 2017
+    welcome: Bienvenido a JSDayES 2018
     text1: Charlas & Talleres
     text2: JavaScript, NodeJS, Angular, Polymer...
-    date: 19 Mayo 2017 <br/> Madrid
+    date: 19 Mayo 2018 <br/> Madrid
 
 speakers:
     title: Speakers
@@ -32,10 +33,10 @@ cfp:
     description: ¿Quieres participar como ponente dando una charla? <br> No te lo pienses. Accede al formulario e incribe tu propuesta.
     dates: Fechas Importantes
     limit: Límite para envío de propuestas.
-    datelimit: 31/01/2017
+    datelimit: 31/01/2018
     notification: Fecha en que comunicaremos las propuestas aceptadas
     notificationTitle: Notificación de Aceptación
-    notificationlimit: 02/2017
+    notificationlimit: 02/2018
 
 eventPresentation:
     title: <span class="name">JSDayES</span> la conferencia de JavaScript más grande de España
@@ -113,4 +114,4 @@ footer:
     twitter: Twitter de JSDayES
     youtube: Canal Youtube de JSDayES
     google: Google Plus de JSDayES
-    copyright: JSDayES - 4a Edición &copy; Mayo 2017
+    copyright: JSDayES - 4a Edición &copy; Mayo 2018

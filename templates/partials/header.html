@@ -13,13 +13,38 @@
             <ul class="nav navbar-nav scroll-to navbar-right">
                 <li><a href="/#home">{{ text.header.home }}</a></li>
                 <!-- <li><a href="#proposals">{{ text.header.cfp }}</a></li> -->
-                <!-- <li><a href="#streaming">{{ text.header.streaming }}</a></li> -->
+                {% if sections.streaming %}
+                <li><a href="#streaming">{{ text.header.streaming }}</a></li> 
+                {% endif %}
+
+                {% if sections.speakers %}
                 <li><a href="/#speakers">{{ text.header.speakers }}</a></li>
+                {% endif %}
+
+                {% if sections.schedule %}
                 <li><a href="/#schedule">{{ text.header.schedule }}</a></li>
+                {% endif %}
+
+                {% if sections.where %}
                 <li><a href="/#where">{{ text.header.where }}</a></li>
+                {% endif %}
+
+                {% if sections.tickets %}
                 <li><a href="/#tickets">{{ text.header.tickets }}</a></li>
+                {% endif %}
+
+                {% if sections.organizers %}
                 <li><a href="/#organizers">{{ text.header.organizers }}</a></li>
+                {% endif %}
+
+                {% if sections.contact %}
+                <li><a href="/#contact">{{ text.header.contact }}</a></li>
+                {% endif %}
+                
+
+                {% if sections.sponsors %}
                 <li><a href="/#sponsors">{{ text.header.sponsors }}</a></li>
+                {% endif %}
             </ul>
         </div>
     </div>
