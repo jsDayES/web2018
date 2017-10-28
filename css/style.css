@@ -281,7 +281,7 @@ Home style
 .shadow {
   -width: 120px;
   -text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   padding-top: 30px;
   -display: inline-block;
   -margin-bottom: 10px;
