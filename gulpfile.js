@@ -140,22 +140,7 @@ gulp.task ('fonts', function () {
 });
 
 function html(lang) {
-    var config = {
-        cfpMode: true,
-        sections: {
-            streaming: false,
-            speakers: false,
-            schedule: false,
-            presentation: false,
-            where: false,
-            tickets: false,
-            contact: true,
-            organizers: true,
-            sponsors: false,
-            codeOfConduct: true
-        }
-    };
-
+    var config = JSON.parse(JSON.stringify(require('./config.json')));
     var dist = paths.dist;
     var root = '/';
     var langFile;
@@ -170,7 +155,7 @@ function html(lang) {
     config.text = langFile;
     config.lang = lang;   
     config.root = root;
-    
+
     return gulp.src([
         'templates/pages/index.html',
         'templates/pages/*-' + lang +'.html'

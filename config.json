@@ -1,0 +1,16 @@
+{
+    "cfpMode": true,
+    "sections": {
+        "streaming": false,
+        "speakers": false,
+        "schedule": false,
+        "presentation": false,
+        "where": false,
+        "tickets": false,
+        "contact": true,
+        "organizers": true,
+        "sponsors": false,
+        "codeOfConduct": true
+    },
+    "koliseoCfp": "https://www.koliseo.com/jsdayes/jsdayes-2017/r4p/5765283616653312#/"
+}
