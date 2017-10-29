@@ -60,3 +60,19 @@ $(document).ready(function () {
         navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
 });
+
+if (!('IntersectionObserver' in window)) {
+    Array.from(images).forEach(function(image){ preloadImage(image) });
+} else {
+    var images = document.querySelectorAll('img[data-src]');
+    var config = {
+        rootMargin: '50px 0px',
+        threshold: 0.01
+    };
+
+    var observer = new IntersectionObserver(onIntersection, config);
+
+    images.forEach(function(image) {
+        observer.observe(image);
+    });
+}

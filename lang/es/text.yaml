@@ -104,7 +104,7 @@ tickets:
     soldout: Agotadas
     specialWorkshop: Workshop con @substack
     specialWorkshopPrice: 80€
-    specialWorkshopDesc: Hands On: The Modular Web! by <a target="_blank" href="https://twitter.com/substack">@substack</a>
+    specialWorkshopDesc: Hands On: The Modular Web! by <a target="noopener" href="https://twitter.com/substack">@substack</a>
     normal: Normales
     normalTicketPrice: 80€
     special: Estudiantes y desempleados

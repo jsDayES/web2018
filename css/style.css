@@ -915,8 +915,7 @@ By ADAMSCHWARTZ
 
 .cfp-page {
     padding: 100px 0 100px;
-    background-color: #f1f1f1;
-    font-size: 22px;
+    font-size: 18px;
     line-height: normal;
 }
 
@@ -932,6 +931,14 @@ By ADAMSCHWARTZ
 .cfp-page h2 {
     padding-top: 20px;
     font-size: 35px;
+}
+
+.cfp-page li {
+  margin-bottom: 0.5rem;
+}
+
+.cfp-page ul {
+  margin: 2.5rem 0; 
 }
 
 .cfp-page, .codigoPage {

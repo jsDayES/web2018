@@ -10,6 +10,7 @@ var merge       = require ('merge-stream');
 var del         = require ('del');
 var addsrc      = require('gulp-add-src');
 var YAML = require('yamljs');
+var critical = require('critical').stream;
 
 var config = {
     cfpMode: true,
@@ -50,6 +51,7 @@ var paths = {
         'css/codigo-page.css'
     ],
     js     : [
+        './js/lazy-load-image.js',
         './js/jquery.min.js',
         './bootstrap/./js/bootstrap.min.js',
         './js/jquery.backstretch.min.js',
@@ -70,7 +72,10 @@ gulp.task ('clean', function () {
 
 gulp.task ('images', function () {
     return gulp.src (paths.images)
-        .pipe($.if(isProd, $.imagemin ({ progressive: true })))
+        .pipe($.if(isProd, $.imagemin ([
+            $.imagemin.jpegtran({progressive: true}),
+            $.imagemin.optipng({optimizationLevel: 7})            
+        ])))
         .pipe (gulp.dest (paths.dist + '/img/'));
 });
 
@@ -82,7 +87,10 @@ gulp.task ('ico', function () {
 gulp.task ('js', function () {
     return gulp.src (paths.js)
         .pipe ($.concat ('main.js',{newLine: ';'}))
-        .pipe($.if(isProd, $.uglify()))
+        .pipe($.if(isProd, $.uglify().on('error', function(err) {
+            console.log(err.toString());
+            this.emit('end');
+        })))
         .pipe (gulp.dest (paths.dist + '/js/'));
 });
 
@@ -91,7 +99,7 @@ gulp.task ('koliseo', function () {
         .pipe (gulp.dest (paths.dist + '/js/'));
 });
 
-gulp.task ('css', function () {
+gulp.task ('compile-css', function () {
     var page =  gulp.src (paths.css)
         .pipe ($.concat ('main.css'))
         .pipe($.if(isProd, $.cssmin()))
@@ -103,6 +111,43 @@ gulp.task ('css', function () {
         .pipe (gulp.dest (paths.dist + '/css/'));
 
     return merge(page, codePage);
+});
+
+gulp.task('critical', function () {
+    return gulp.src('dist/*.html')
+        .pipe(critical({
+            base: 'dist/',
+            inline: true,
+            dimensions: [
+            {
+                height: 1050,
+                width: 1980
+            },                
+            {
+                height: 1024,
+                width: 768
+            }, {
+                height: 1024,
+                width: 980
+            },
+            {
+                height: 736,
+                width: 414
+            }],            
+            css: ['dist/css/main.css']
+        }))
+        .on('error', function(err) {
+            console.error(err.message);
+        })
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task ('css', function (cb) {
+    if (isProd) {
+        runSequence ('compile-css', 'critical', cb);
+    } else {
+        runSequence('compile-css', cb);
+    }
 });
 
 gulp.task ('fonts', function () {
@@ -133,14 +178,13 @@ gulp.task ('html', function () {
 gulp.task ('build', ['images', 'ico', 'fonts', 'koliseo', 'js', 'css', 'html']);
 
 gulp.task ('server', function () {
-    gulp.src ('.')
+    gulp.src ('dist/')
         .pipe (webserver ({
             port             : 5000,
             livereload       : false,
             directoryListing : {
                 enable : false,
-            },
-            open             : 'index.html'
+            }
         }));
 });
 
