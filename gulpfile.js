@@ -12,22 +12,6 @@ var addsrc      = require('gulp-add-src');
 var YAML = require('yamljs');
 var critical = require('critical').stream;
 
-var config = {
-    cfpMode: true,
-    sections: {
-        streaming: false,
-        speakers: false,
-        schedule: false,
-        presentation: false,
-        where: false,
-        tickets: false,
-        contact: true,
-        organizers: true,
-        sponsors: false,
-        codeOfConduct: true
-    }
-};
-
 var paths = {
     yaml   : './lang/**/*.yaml',
     html   : './templates/**/*.html',
@@ -155,27 +139,63 @@ gulp.task ('fonts', function () {
         .pipe (gulp.dest(paths.dist + '/fonts'));
 });
 
-gulp.task ('html', function () {
-    var langEn = YAML.load('./lang/en/text.yaml');
-    var langEs = YAML.load('./lang/es/text.yaml');
+function html(lang) {
+    var config = {
+        cfpMode: true,
+        sections: {
+            streaming: false,
+            speakers: false,
+            schedule: false,
+            presentation: false,
+            where: false,
+            tickets: false,
+            contact: true,
+            organizers: true,
+            sponsors: false,
+            codeOfConduct: true
+        }
+    };
 
-    config.text = langEn;
-    config.lang = 'en';
+    var dist = paths.dist;
+    var root = '/';
+    var langFile;
+    if (lang === 'es') {
+        langFile = YAML.load('./lang/es/text.yaml');
+        dist = dist + 'es';
+        root = '/es/';
+    } else {
+        langFile = YAML.load('./lang/en/text.yaml');
+    }
 
-    return gulp.src('templates/pages/*.html')       
-        .pipe($.nunjucksRender({
-            path: ['templates/'],
-            data: config
-        }))  
-        .pipe($.if(isProd, $.minifyHtml({
-            quotes : true,
-            empty  : true,
-            spare  : true
-        })))
-        .pipe(gulp.dest (paths.dist))
+    config.text = langFile;
+    config.lang = lang;   
+    config.root = root;
+    
+    return gulp.src([
+        'templates/pages/index.html',
+        'templates/pages/*-' + lang +'.html'
+    ])       
+    .pipe($.nunjucksRender({
+        path: ['templates/'],
+        data: config
+    }))  
+    .pipe($.if(isProd, $.minifyHtml({
+        quotes : true,
+        empty  : true,
+        spare  : true
+    })))
+    .pipe(gulp.dest(dist))
+};
+
+gulp.task ('html-en', function () {
+    return html('en');
 });
 
-gulp.task ('build', ['images', 'ico', 'fonts', 'koliseo', 'js', 'css', 'html']);
+gulp.task ('html-es', function () {
+    return html('es');
+});
+
+gulp.task ('build', ['images', 'ico', 'fonts', 'koliseo', 'js', 'css', 'html-en', 'html-es']);
 
 gulp.task ('server', function () {
     gulp.src ('dist/')
@@ -204,16 +224,16 @@ gulp.task ('dist', function (cb) {
 });
 
 gulp.task('watch', function() {
-    gulp.watch([paths.html, paths.yaml], ['html']);
+    gulp.watch([paths.html, paths.yaml], ['html-en', 'html-es']);
     gulp.watch(paths.css, ['css']);
     gulp.watch(paths.js, ['js']);
-    gulp.watch(paths.yaml, ['html']);
+    gulp.watch(paths.yaml, ['html-es', 'html-en']);
 });
 
 
 gulp.task('dev',  function (cb) {
     isProd = false;
-    runSequence ('build', 'watch', 'server:dist', cb);
+    runSequence ('clean', 'build', 'watch', 'server:dist', cb);
 });
 
 gulp.task('default',  function (cb) {

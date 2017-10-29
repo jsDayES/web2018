@@ -7,46 +7,46 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">{{ text.title }}</a>
+            <a class="navbar-brand" href="{{root}}">{{ text.title }}</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav scroll-to navbar-right">
-                <li><a href="/#home">{{ text.header.home }}</a></li>
+                <li><a href="#home">{{ text.header.home }}</a></li>
                 <!-- <li><a href="#proposals">{{ text.header.cfp }}</a></li> -->
                 {% if sections.streaming %}
-                <li><a href="#streaming">{{ text.header.streaming }}</a></li> 
+                <li><a href="{{root}}#streaming">{{ text.header.streaming }}</a></li> 
                 {% endif %}
 
                 {% if sections.speakers %}
-                <li><a href="/#speakers">{{ text.header.speakers }}</a></li>
+                <li><a href="{{root}}#speakers">{{ text.header.speakers }}</a></li>
                 {% endif %}
 
                 {% if sections.schedule %}
-                <li><a href="/#schedule">{{ text.header.schedule }}</a></li>
+                <li><a href="{{root}}#schedule">{{ text.header.schedule }}</a></li>
                 {% endif %}
 
                 {% if sections.where %}
-                <li><a href="/#where">{{ text.header.where }}</a></li>
+                <li><a href="{{root}}#where">{{ text.header.where }}</a></li>
                 {% endif %}
 
                 {% if sections.tickets %}
-                <li><a href="/#tickets">{{ text.header.tickets }}</a></li>
+                <li><a href="{{root}}#tickets">{{ text.header.tickets }}</a></li>
                 {% endif %}
 
                 {% if sections.organizers %}
-                <li><a href="/#organizers">{{ text.header.organizers }}</a></li>
+                <li><a href="{{root}}#organizers">{{ text.header.organizers }}</a></li>
                 {% endif %}
 
                 {% if sections.contact %}
-                <li><a href="/#contact">{{ text.header.contact }}</a></li>
+                <li><a href="{{root}}#contact">{{ text.header.contact }}</a></li>
                 {% endif %}
 
                 {% if sections.sponsors %}
-                <li><a href="/#sponsors">{{ text.header.sponsors }}</a></li>
+                <li><a href="{{root}}#sponsors">{{ text.header.sponsors }}</a></li>
                 {% endif %}
 
                 {% if sections.codeOfConduct %}
-                <li><a href="/code-of-conduct-{{lang}}.html">{{ text.header.codeOfConduct }}</a></li>
+                <li><a href="{{root}}code-of-conduct-{{lang}}.html">{{ text.header.codeOfConduct }}</a></li>
                 {% endif %}
             </ul>
         </div>
