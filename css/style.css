@@ -738,7 +738,15 @@ Proposals style
   font-size: 50px;
   transform: rotate(-15deg);
   margin-right: 0.5rem;
-}        
+}     
+
+@media (max-width: 1024px) {
+  .proposals .lear {
+      margin-top: 1rem;
+  }
+}
+
+
 /**********************
 
 Footer style
