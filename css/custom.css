@@ -241,3 +241,13 @@ ul.speakers { display:flex; justify-content: flex-start; flex-wrap:wrap; list-st
 .backstretch {
     filter:blur(5px);
 } */
+
+img[data-src]:not(.js-lazy-image--handled) {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.organizers-slider {
+    padding: 0;
+}
