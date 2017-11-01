@@ -223,5 +223,5 @@ gulp.task('dev',  function (cb) {
 
 gulp.task('default',  function (cb) {
     isProd = true;
-    runSequence ('build', cb);
+    runSequence ('dist', cb);
 });
