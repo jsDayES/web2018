@@ -5,7 +5,7 @@
   "scripts": {
     "updateWeb": "rm -rf jsdayes.github.io/* && cp -r dist/* jsdayes.github.io",
     "start": "gulp dev",
-    "pro": "gulp && gulp critical",
+    "pro": "gulp && gulp critical && cp CNAME dist/",
     "server": "gulp server",
     "deploy": "git subtree push --prefix dist origin gh-pages",
     "deploy-force": "git push origin `git subtree split --prefix dist master`:gh-pages --force"
