@@ -98,7 +98,7 @@ gulp.task ('css', function () {
 });
 
 gulp.task('critical', function () {
-  return gulp.src('dist/*.html')
+  return gulp.src('dist/**/*.html')
         .pipe(critical({
             inline: true,
             base: 'dist/',
