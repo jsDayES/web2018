@@ -83,7 +83,7 @@ gulp.task ('koliseo', function () {
         .pipe (gulp.dest (paths.dist + '/js/'));
 });
 
-gulp.task ('compile-css', function () {
+gulp.task ('css', function () {
     var page =  gulp.src (paths.css)
         .pipe ($.concat ('main.css'))
         .pipe($.if(isProd, $.cssmin()))
@@ -98,10 +98,11 @@ gulp.task ('compile-css', function () {
 });
 
 gulp.task('critical', function () {
-    return gulp.src('dist/*.html')
+  return gulp.src('dist/*.html')
         .pipe(critical({
-            base: 'dist/',
             inline: true,
+            base: 'dist/',
+            minify: true,
             dimensions: [
             {
                 height: 1050,
@@ -124,14 +125,6 @@ gulp.task('critical', function () {
             console.error(err.message);
         })
         .pipe(gulp.dest('dist'));
-});
-
-gulp.task ('css', function (cb) {
-    if (isProd) {
-        runSequence ('compile-css', 'critical', cb);
-    } else {
-        runSequence('compile-css', cb);
-    }
 });
 
 gulp.task ('fonts', function () {
@@ -169,7 +162,7 @@ function html(lang) {
         empty  : true,
         spare  : true
     })))
-    .pipe(gulp.dest(dist))
+    .pipe(gulp.dest(dist));
 };
 
 gulp.task ('html-en', function () {
