@@ -3,14 +3,15 @@
 ```shell
 npm install
 ```
-## Run
+## Run dev mode
 
 ```shell
-gulp
+npm start
 ```
 
-## Push web
+## Update pro
 
 ```shell
-npm run updateWeb
+npm run pro
+npm run deploy
 ```
