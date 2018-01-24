@@ -5,11 +5,13 @@
 {% block content %}
 {% include "partials/header.html" %}
 
-{% if cfpMode %}
-{% include "partials/main-cfp.html" %}
-{% include "partials/proposals.html" %}
+{% if mode === "wait" %}
+    {% include "partials/main-wait.html" %}
+{% elif mode === "cfp" %}
+    {% include "partials/main-cfp.html" %}
+    {% include "partials/proposals.html" %}
 {% else %}
-{% include "partials/main-buy.html" %}
+    {% include "partials/main-buy.html" %}
 {% endif %}
 
 {% if sections.streaming %}
