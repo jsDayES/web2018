@@ -1,17 +1,17 @@
 {
-    "mode": "wait",
+    "mode": "cfp",
     "sections": {
         "streaming": false,
         "speakers": false,
         "schedule": false,
         "presentation": false,
-        "where": false,
+        "where": true,
         "tickets": false,
         "contact": true,
-        "organizers": true,
+        "organizers": false,
         "sponsors": false,
         "codeOfConduct": true,
         "lastEdition": true
     },
-    "koliseoCfp": "https://www.koliseo.com/jsdayes/jsdayes-2017/r4p/5765283616653312#/"
+    "koliseoCfp": "https://www.koliseo.com/jsdayes/jsday-es-2018/r4p/5679439232892928#/"
 }
