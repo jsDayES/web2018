@@ -21,7 +21,7 @@ home:
     welcome: Bienvenido a JSDayES 2018
     text1: Charlas & Talleres
     text2: JavaScript, NodeJS, Angular, Polymer...
-    date: 19 Mayo 2018 <br/> Madrid
+    date: 20 Octubre 2018 <br/> Madrid
 
 speakers:
     title: Speakers
@@ -35,10 +35,10 @@ cfp:
     description: ¿Quieres participar como ponente dando una charla? <br> No te lo pienses. Accede al formulario e incribe tu propuesta.
     dates: Fechas Importantes
     limit: Límite para envío de propuestas.
-    datelimit: 31/01/2018
+    datelimit: 31/05/2018
     notification: Fecha en que comunicaremos las propuestas aceptadas
     notificationTitle: Notificación de Aceptación
-    notificationlimit: 02/2018
+    notificationlimit: 06/2018
     learn: Más información del CFP
 
 eventPresentation:

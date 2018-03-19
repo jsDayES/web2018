@@ -21,7 +21,7 @@ home:
     welcome: Welcome to JSDayES 2018
     text1: Talks & Workshops
     text2: JavaScript, NodeJS, AngularJS, Polymer...
-    date: 19 May 2018 <br/> Madrid
+    date: 20 October 2018 <br/> Madrid
 
 speakers:
     title: Speakers
@@ -35,10 +35,10 @@ cfp:
     description: Do you want to give a talk? <br> Do not think about it. Access and sign up!
     dates: Important dates
     limit: Limit for submitting proposals.
-    datelimit: January 31th, 2018
+    datelimit: May 31th, 2018
     notification: Date when we'll communicate accepted proposals.
     notificationTitle: Notification of acceptance
-    notificationlimit: February 2018
+    notificationlimit: June 2018
     learn: Learn more about the CFP
 
 eventPresentation:
