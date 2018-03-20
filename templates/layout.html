@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ _lang_ }}">
     <head>
+        {% if languageUrl %}
         <script>
         var language = navigator.language || navigator.browserLanguage;
 
@@ -12,6 +13,7 @@
             }
         }
         </script>
+        {% endif %}
         <link rel="icon" type="image/png" href="/favicon.png">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
