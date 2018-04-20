@@ -7,12 +7,18 @@ header:
     schedule: Schedule
     contact: Contact
     where: Where
+    newsletter: Newsletter
     tickets: Tickets
     organizers: Organizers
     sponsors: Sponsors
     cfp: CfP
     codeOfConduct: Code of conduct
     pastEdition: Past edition
+
+newsletter:
+    url: https://app.mailjet.com/widget/iframe/2WPT/6ci
+    message1: Stay up to date by subscribing to the JSDayES newsletter.
+    message2: No spam, just important stuff about the event.
 
 where:
     transport: Transport

@@ -6,6 +6,7 @@ header:
     speakers: Speakers
     schedule: Programa
     where: Dónde
+    newsletter: Newsletter
     contact: Contacto
     tickets: Entradas
     organizers: Organización
@@ -13,6 +14,11 @@ header:
     cfp: CfP
     codeOfConduct: Código de conducta
     pastEdition: Pasada edición
+
+newsletter:
+    url: https://app.mailjet.com/widget/iframe/2WPT/6fy
+    message1: Suscríbete a la newsletter del JSDayES y te mantendremos al día.
+    message2: Sin spam, solo las cosas importantes sobre el evento.
 
 where:
     transport: Transporte
@@ -110,7 +116,7 @@ tickets:
     normalTicketPrice: 80€
     special: Estudiantes y desempleados
     specialTicketPrice: 20€
-    warning: Es necesario acreditar estar en paro o ser estudiante en la entrada de la conferencia.           
+    warning: Es necesario acreditar estar en paro o ser estudiante en la entrada de la conferencia.
     specialpoint: Lo mismo que un ticket normal
 
 footer:
