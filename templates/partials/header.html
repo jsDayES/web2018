@@ -14,7 +14,7 @@
                 <li><a href="{{root}}#home">{{ text.header.home }}</a></li>
                 <!-- <li><a href="#proposals">{{ text.header.cfp }}</a></li> -->
                 {% if sections.streaming %}
-                <li><a href="{{root}}#streaming">{{ text.header.streaming }}</a></li> 
+                <li><a href="{{root}}#streaming">{{ text.header.streaming }}</a></li>
                 {% endif %}
 
                 {% if sections.speakers %}
@@ -37,6 +37,10 @@
                 <li><a href="{{root}}#organizers">{{ text.header.organizers }}</a></li>
                 {% endif %}
 
+                {% if sections.newsletter %}
+                <li><a href="{{root}}#newsletter">{{ text.header.newsletter }}</a></li>
+                {% endif %}
+
                 {% if sections.contact %}
                 <li><a href="{{root}}#contact">{{ text.header.contact }}</a></li>
                 {% endif %}
@@ -51,7 +55,7 @@
 
                 {% if sections.lastEdition %}
                 <li><a href="http://2017.jsday.es">{{ text.header.pastEdition }}</a></li>
-                {% endif %}                
+                {% endif %}
             </ul>
         </div>
     </div>
