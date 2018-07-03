@@ -44,7 +44,7 @@ cfp:
     datelimit: May 31th, 2018
     notification: Date when we'll communicate accepted proposals.
     notificationTitle: Notification of acceptance
-    notificationlimit: June 2018
+    notificationlimit: Mid June 2018
     learn: Learn more about the CFP
 
 eventPresentation:
@@ -84,7 +84,8 @@ sponsorsInfo:
     printLogo: Logo in printed material
     logoscreen: Logo in event screen
     presentation: 5 minutes presentation
-    table: Table with own roll up
+    table: Table with roll up
+    trackSponsor: Sponsorship room
     press: Reference in press and social media
     layards: Lanyard Sponsor
     welcomePack: Flyer or gift in Welcome Pack

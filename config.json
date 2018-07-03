@@ -1,5 +1,5 @@
 {
-    "mode": "cfp",
+    "mode": "wait",
     "sections": {
         "streaming": false,
         "speakers": false,
@@ -10,7 +10,7 @@
         "newsletter": true,
         "contact": true,
         "organizers": false,
-        "sponsors": false,
+        "sponsors": true,
         "codeOfConduct": true,
         "lastEdition": true
     },

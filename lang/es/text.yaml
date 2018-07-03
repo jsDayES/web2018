@@ -44,7 +44,7 @@ cfp:
     datelimit: 31/05/2018
     notification: Fecha en que comunicaremos las propuestas aceptadas
     notificationTitle: Notificación de Aceptación
-    notificationlimit: 06/2018
+    notificationlimit: 07/2018
     learn: Más información del CFP
 
 eventPresentation:
@@ -82,9 +82,10 @@ sponsorsInfo:
     logo: Logotipo en web
     acknowledgment: Agradecimiento en evento
     printLogo: Logotipo en material impreso
-    logoscreen: Logotipo en salvapantallas
+    logoscreen: Logo en la pantalla del evento
     presentation: 5 minutos de presentación
-    table: Mesa con roll up propio
+    table: Mesa con roll up
+    trackSponsor: Patrocinio sala
     press: Referencia en prensa y RRSS
     layards: Lanyard Sponsor
     welcomePack: Flyer o regalo en Welcome Pack

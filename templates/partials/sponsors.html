@@ -7,8 +7,8 @@
                 <p>{{ text.sponsors.description }}</p>
             </div>
         </div>
-
-        <!-- <div class="row">
+        <!--
+        <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
                 <h4>Diamond</h4>
             </div>
@@ -23,7 +23,7 @@
                 </div>
                 </li>
             </ul>
-        </div> -->
+        </div>
 
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
@@ -201,14 +201,13 @@
 
         </div>
 
-        <!-- <div class="row">
+         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
                 <h4>Media Partners</h4>
             </div>
 
-        </div> -->
-
-        <!-- <div class="row">
+        </div>
+         <div class="row">
 
             <ul class="logos">
 
@@ -365,10 +364,10 @@
                     <thead>
                         <tr>
                             <td></td>
-                            <th>Silver - 750€</th>
+                            <th>Silver - 1000€</th>
                             <th>Gold - 1500€</th>
-                            <th>Gold Plus - 2000€</th>
                             <th>Platinum - 3000€</th>
+                            <th>Platinum Plus - 4000€</th>
                             <th>Diamond - 5000€</th>
                         </tr>
                     </thead>
@@ -422,6 +421,14 @@
                             <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
                         </tr>
                         <tr>
+                            <th scope="row">{{ text.sponsorsInfo.trackSponsor }}</th>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.allowed }}</span> <i class="fa fa-check"></i></td>
+                            <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span></td>
+                        </tr>                        
+                        <tr>
                             <th scope="row">{{ text.sponsorsInfo.welcomePack }}</th>
                             <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
                             <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
@@ -441,7 +448,7 @@
                             <th scope="row">{{ text.sponsorsInfo.dinner }}</th>
                             <td><span class="sr-only">{{ text.sponsorsInfo.notallowed }}</span> </td>
                             <td>1 {{ text.sponsorsInfo.person }}</td>
-                            <td>1 {{ text.sponsorsInfo.person }}</td>
+                            <td>2 {{ text.sponsorsInfo.person }}</td>
                             <td>2 {{ text.sponsorsInfo.people }}</td>
                             <td>3 {{ text.sponsorsInfo.people }}</td>
                         </tr>
@@ -449,8 +456,8 @@
                             <th scope="row">{{ text.sponsorsInfo.freetickets }}</th>
                             <td>2 {{ text.sponsorsInfo.ticket }}</td>
                             <td>4 {{ text.sponsorsInfo.ticket }}</td>
-                            <td>5 {{ text.sponsorsInfo.ticket }}</td>
-                            <td>6 {{ text.sponsorsInfo.tickets }}</td>
+                            <td>6 {{ text.sponsorsInfo.ticket }}</td>
+                            <td>7 {{ text.sponsorsInfo.tickets }}</td>
                             <td>8 {{ text.sponsorsInfo.tickets }}</td>
                         </tr>
                     </tbody>
@@ -525,7 +532,7 @@
         </div>
         <div class="row">
             <div class="col-sm-6 col-sm-offset-3 text-center">
-                <a href="mailto:hola@jsday.es" class="btn btn-dark btn-lg">{{ text.sponsors.button }}</a>
+                <a href="mailto:hola@jsday.es" class="btn btn-yellow btn-lg">{{ text.sponsors.button }}</a>
             </div>
         </div>
 
