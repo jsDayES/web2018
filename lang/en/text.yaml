@@ -87,7 +87,8 @@ sponsorsInfo:
     table: Table with roll up
     trackSponsor: Sponsorship room
     press: Reference in press and social media
-    layards: Lanyard Sponsor
+    standalonemailing: Lanyard Sponsor
+    rrss: Press releases and Social Media
     welcomePack: Flyer or gift in Welcome Pack
     mailing: Standalone mailing
     dinner: Dinner with speakers and organization
