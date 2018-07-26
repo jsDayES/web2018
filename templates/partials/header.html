@@ -49,6 +49,10 @@
                 <li><a href="{{root}}#sponsors">{{ text.header.sponsors }}</a></li>
                 {% endif %}
 
+                {% if sections.blog %}
+                <li><a href="https://blog.jsday.es">{{ text.header.blog }}</a></li>
+                {% endif %}
+
                 {% if sections.codeOfConduct %}
                 <li><a href="{{root}}code-of-conduct-{{lang}}.html">{{ text.header.codeOfConduct }}</a></li>
                 {% endif %}

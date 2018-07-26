@@ -11,6 +11,7 @@
         "contact": true,
         "organizers": false,
         "sponsors": true,
+        "blog": true,
         "codeOfConduct": true,
         "lastEdition": true
     },
