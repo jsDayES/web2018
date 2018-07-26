@@ -30,6 +30,31 @@
           gtag('config', 'UA-122951526-1');
         </script>
         <!-- END Google Analytics -->
+
+        <!-- START Cookies Alert -->
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+        <script>
+          window.addEventListener("load", function(){
+          window.cookieconsent.initialise({
+            "palette": {
+              "popup": {
+                "background": "#000"
+              },
+              "button": {
+                "background": "#fdc12c"
+              }
+            },
+            "theme": "edgeless",
+            "position": "bottom-right",
+            "content": {
+              "message": "{{ text.cookies.message }}",
+              "dismiss": "{{ text.cookies.dismiss }}",
+              "link": "{{ text.cookies.link }}"
+            }
+          })});
+        </script>
+        <!-- END Cookies Alert -->
     </head>
     <body data-spy="scroll" class="{% if backstretch %}backstretch-enabled{% endif %} lang-{{ lang }}">
         {% block content %} {% endblock %}

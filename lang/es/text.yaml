@@ -16,6 +16,11 @@ header:
     codeOfConduct: Código de conducta
     pastEdition: Pasada edición
 
+cookies:
+    message: Hola, utilizamos cookies, solo para rastrear visitas a nuestro sitio web, no almacenamos datos personales.
+    link: Más información
+    dismiss: Ok, entendido!
+
 newsletter:
     url: https://app.mailjet.com/widget/iframe/2WPT/6fy
     message1: Suscríbete a la newsletter del JSDayES y te mantendremos al día.
