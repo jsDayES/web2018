@@ -1,12 +1,12 @@
 {
-    "mode": "wait",
+    "mode": "buy",
     "sections": {
         "streaming": false,
         "speakers": false,
         "schedule": false,
         "presentation": false,
         "where": true,
-        "tickets": false,
+        "tickets": true,
         "newsletter": true,
         "contact": true,
         "organizers": false,

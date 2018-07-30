@@ -110,10 +110,10 @@ tickets:
     superearly: Super Early Bird
     superearlyprice: 25€
     early: Early Bird
-    earlyprice: 50€
-    point1: Two day access
-    point2: Lunch (13 May)
-    point3: Pack JSDayEs
+    earlyprice: 45€
+    point1: One day access
+    point2: Lunch
+    point3: This year will be only Spanish talks
     buy: Buy
     buyticket: Buy Ticket
     soldout: Sold out

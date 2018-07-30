@@ -6,7 +6,7 @@
                 <span class="center-line"></span>
             </div>
         </div>
-        <div class="row tickets-row tickets-row-1">
+<!--         <div class="row tickets-row tickets-row-1">
             <div class="col-md-4 col-sm-6 workshop">
                 <div class="pricing-simple">
                     <h3>{{ text.tickets.specialWorkshop }}</h3>
@@ -15,7 +15,7 @@
                         <li><i class="fa fa-check-square"></i>{{ text.tickets.specialWorkshopDesc }}</li>
                     </ul>
                     <div class="text-center">
-                        <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsdayes-2017">{{ text.tickets.buy }}</a>
+                        <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsday-es-2018">{{ text.tickets.buy }}</a>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                     </ul>
                     <div class="bottom">
                         <div class="text-center">
-                            <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsdayes-2017">{{ text.tickets.buy }}</a>
+                            <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsday-es-2018">{{ text.tickets.buy }}</a>
                         </div>
                     </div>
                 </div>
@@ -44,15 +44,16 @@
                     </ul>
                     <div class="bottom">
                         <div class="text-center">
-                            <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsdayes-2017">{{ text.tickets.buy }}</a>
+                            <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsday-es-2018">{{ text.tickets.buy }}</a>
                         </div>
                     </div>
                     <p class="warning">{{ text.tickets.warning }}</p>
                 </div>
             </div>
             
-        </div>
+        </div> -->
         <div class="row tickets-row">
+            <!-- 
             <div class="col-md-4 col-sm-6">
                 <div class="pricing-simple popular">
                     <h3>{{ text.tickets.superearly }}</h3>
@@ -62,29 +63,32 @@
                         <li><i class="fa fa-check-square"></i>{{ text.tickets.point2 }}</li>
                         <li><i class="fa fa-check-square"></i>{{ text.tickets.point3 }}</li>
                     </ul>
-                    <!-- <div class="text-center">
-                        <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsdayes-2017">{{ text.tickets.buy }}</a>
-                    </div> -->
+                    <div class="text-center">
+                        <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsday-es-2018">{{ text.tickets.buy }}</a>
+                    </div>
                     <div class="bottom">
                         <p><strong>{{ text.tickets.soldout }}</strong></p>
                     </div>
                 </div>
             </div>
+            -->
             <div class="col-md-4 col-sm-6">
                 <div class="pricing-simple popular">
                     <h3>{{ text.tickets.early }}</h3>
                     <h4>{{ text.tickets.earlyprice }}</h4>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point1 }}</li>
-                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point2 }}</li>
+<!--                         <li><i class="fa fa-check-square"></i>{{ text.tickets.point1 }}</li>
+                        <li><i class="fa fa-check-square"></i>{{ text.tickets.point2 }}</li> -->
+                        {% if lang === 'en' %}
                         <li><i class="fa fa-check-square"></i>{{ text.tickets.point3 }}</li>
+                        {% endif %}
                     </ul>
-                    <div class="bottom">
+       <!--              <div class="bottom">
                         <p><strong>{{ text.tickets.soldout }}</strong></p>
-                    </div>
-                    <!-- <div class="text-center">
-                        <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsdayes-2017">{{ text.tickets.buy }}</a>
                     </div> -->
+                    <div class="text-center">
+                        <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsday-es-2018">{{ text.tickets.buy }}</a>
+                    </div>
                 </div>
             </div>
         </div>
