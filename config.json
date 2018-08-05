@@ -2,7 +2,7 @@
     "mode": "buy",
     "sections": {
         "streaming": false,
-        "speakers": false,
+        "speakers": true,
         "schedule": false,
         "presentation": false,
         "where": true,
@@ -13,7 +13,116 @@
         "sponsors": true,
         "blog": true,
         "codeOfConduct": true,
-        "lastEdition": true
+        "lastEdition": false
     },
-    "koliseoCfp": "https://www.koliseo.com/jsdayes/jsday-es-2018/r4p/5679439232892928#/"
+    "koliseoCfp": "https://www.koliseo.com/jsdayes/jsday-es-2018/r4p/5679439232892928#/",
+    "speakers": [
+        {
+            "name": "Laura Morillo",
+            "bio": "Backend Engineer en Seedtag. Ha peleado con muchas tecnologías desde C++ a Javascript y a ratos lidia con servidores. En su tiempo libre además organiza meetups para el GDG Madrid y para grupos en los que promueve la mayor participación de las mujeres en tecnología (AgileGirls y Tech&Ladies).",
+            "photo": "laura.jpg",
+            "social": {
+                "twitter": "https://twitter.com/Laura_Morillo"
+            }
+        },
+        {
+            "name": "Rubén Valseca",
+            "bio": "Trabajo como Frontend Developer en StyleSage, una pequeña empresa con sede en NY de Big Data en el mundo de la moda. Enamorado de JavaScript desde que descubrí las promesas llevo desde entonces varios años en el ecosistema startup trabajando en empresas de producto que van desde una aplicación de alquiler de plazas de garaje por horas hasta sistemas SCADAs de control de parques eólicos.",
+            "photo": "ruben-valseca.jpg",
+            "social": {
+                "github": "https://github.com/rubnvp/",
+                "twitter": "https://twitter.com/rubnvp/"
+            }
+        },        
+        {
+            "name": "Cristina Ponce Torres",
+            "bio": "Senior frontend developer en Kairós. Soy una persona inquieta, emprendedora y sin miedo a los retos. Por ello, entre otras razones, me metí de lleno en el mundo frontend, un mundo que avanza constantemente al mismo ritmo que lo hacen las tecnologías que usamos día tras día. En todos los años que llevo desarrollando en el sector he utilizado diversas librerías, lenguajes y frameworks.",
+            "photo": "cristina-ponce.jpg",
+            "social": {
+            }
+        },   
+        {
+            "name": "Eduardo Sada",
+            "bio": "Eduardo es especialista Javascript en Kairós DS, con más de 12 años de experiencia en desarrollo Front-End; hoy se dedica, según su madre, a «hacer caritas y botoncitos» de manera profesional. Suele dar charlas en eventos de programación para no pagar la entrada.",
+            "photo": "eduardo-sada.jpg",
+            "social": {
+            }
+        },        
+        {
+            "name": "Ana Encinar",
+            "bio": "Ingeniera Informática por la Universidad de Salamanca, curiosa e inquieta por naturaleza. Resultado de ello es la obsesión por experimentar con todo lenguaje de programación. Amante de la inteligencia artificial y del cine. Temas sobre los que ha escrito en alguna revista. Una de las fundadoras de BlackBerry Developers Salamanca y ACM (Association for Computing Machinery) Salamanca. Fue en aquellas épocas donde comenzó su andadura con javascript. Actualmente se encuentra dedicada al mundo fullstack en Idealista.",
+            "photo": "ana-encinar.jpg",
+            "social": {
+                "twitter": "https://twitter.com/jnisabe"
+            }
+        },        
+        {
+            "name": "Héctor Moreno",
+            "bio": "Me gradué en Informática y Matemáticas con la intención de aprender a desarrollar videojuegos. Resultó que mientras estudiaba en Dinamarca el último año de carrera descubrí el desarrollo WEB. Quedé prendado. Al ver que podía combinar la programación hardcore de algoritmos y estructuras de datos (JS) con el diseño de experiencias de usuario únicas (HTML/CSS), decidí hacer de la programación web mi afición y mi trabajo. Más de 2 años han pasado ya desde entonces y sigo creyendo que \"si encuentras un trabajo que te guste, no tendrás que trabajar un solo día\". Me gustan los gatos.",
+            "photo": "hector-moreno.jpg",
+            "social": {
+                "twitter": "https://twitter.com/HecmocerPro",
+                "github": "https://github.com/hecmocer-pro/",
+                "linkedin": "https://www.linkedin.com/in/hecmocer/"
+            }
+        },
+        {
+            "name": "Diego Lafuente Garcia",
+            "bio": "Desarrollo software desde mi más tierna infancia. De pequeño aprendí BASIC y a copiar los pokes del MicroManía. De ahí al C y al C++. Ya lo decía mi madre: empiezas probando la cerveza y acabas enganchado a la heroína. En ocasiones monto empresas: una <a target=\"_blank\" href=\"http://makingthings.es/\">tienda de ropa en Madrid</a>, una <a href=\"http://www.bookaplan.com/\" target=\"_blank\">startup fracasada de viajes</a> y una <a href=\"http://www.acelerame.org/\" target=\"_blank\">fundación para potenciar el talento en España</a>. Los últimos 7 años he estado vendiendo mi alma en cómodos plazos al diablo de Javascript: en su mayoría al de node.js, pero también al de Titanium, al de Ionic y al de Angular. Desde julio del año pasado trabajo en <a href=\"https://www.devo.com\">Devo</a> exprimiendo el rendimiento de node.js hasta límites insospechados.",
+            "photo": "diego-lafuente-garcia.png",
+            "social": {
+                "twitter": "https://twitter.com/tufosa",
+                "github": "https://github.com/DiegoTUI"
+            }
+        },
+        {
+            "name": "Gorka Ludlow",
+            "bio": "Gorka is a Software Engineer passionate about decentralized/distributed technologies and protocols. He is a pioneer applying web P2P tools to use smartphones as remote controllers for games. His Puppets webapp showcases the opportunity for new human-computer interfaces using data from input sensors other than keyboards and trackpads.",
+            "photo": "gorka.png",
+            "social": {
+                "twitter": "https://twitter.com/AquiGorka",
+                "github": "https://github.com/AquiGorka",
+                "home": "http://AquiGorka.com/"
+            }
+        },
+        {
+            "name": "Manuel Martinez-Almeida",
+            "bio": "Como ingenierio de software en Ionic, Manu dedica la mayor parte del tiempo a construir componentes de gran calidad para el framework y desarrollar Stencil. A título personal es el creador de Gin Web Framework y catador de las cervezas más amargas que se puedan comprar.",
+            "photo": "manuel-martinez.jpg",
+            "social": {
+                "twitter": "https://twitter.com/manucorporat",
+                "github": "https://github.com/manucorporat ",
+                "home": "https://manu.engineering"
+            }
+        },
+        {
+            "name": "César Alberca",
+            "bio": "I'm a Frontend developer with a passion for good practices, testing and design patterns at Autentia. I've been programming for the better part of my life and I've dabbled in JavaScript, TypeScript, Vue, React, Angular, CSS, HTML, Kotlin, Android and Java. I'm advocate about open source and I try to spend some time contributing to projects I like and sharing knowledge.",
+            "photo": "cesar-alberca-2.png",
+            "social": {
+                "twitter": "https://twitter.com/cesalberca",
+                "github": "https://github.com/cesalberca ",
+                "linkedin": "https://www.linkedin.com/in/c%C3%A9sar-alberca-8ba52091/"
+            }
+        },
+        {
+            "name": "Pablo Magaz",
+            "bio": "Soy Pablo Magaz, JavaScript Tech Lead, con una experiencia de más de 15 años en el desarrollo de software con diferentes lenguajes de programación pero muy enfocado al mundo JavaScript en los últimos años y con amplia experiencia con frameworks y librerías como React, Angular, RxJs,Redux, Vue o Polymer. Ponente en diferentes eventos, formador de equipos, dedico también parte de mi tiempo a escribir  en mi blog sobre el ecléptico mundo de JavaScript 'El Blog Isomórfico'.             ",
+            "photo": "pablo-magaz.jpg",
+            "social": {
+                "twitter": "https://twitter.com/pablo_magaz",
+                "github": "https://github.com/pmagaz ",
+                "linkedin": "https://es.linkedin.com/in/pablo-magaz-05b46763",
+                "home": "https://pablomagaz.com/"
+            }
+        }, {
+            "name": "Gonzalo Ruiz de Villa",
+            "bio": "I studied engineering, specialising in energy technologies (nuclear, solar, internal combustion, etc..) but I started to work on the web when I was finishing my studies. In year 2000, I founded my own consultancy company, Adesis Netlife, 14 years ago with some partners. I was the CTO of the company until it became part of GFT Group in year 2015, when it had about 300 people in Spain and Mexico. Nowadays, I am CTO at GFT Spain.  In 2016, I co-founded Kenobi Ventures, an investment vehicle focused on seed and early-stage investment in technology-focused startups. Since 2014, I have been Google Developer Expert and Technology Mentor in Google Launchpad. I am the most active speaker in Angular Madrid Meetup and I am also a regular speaker in other meetups and events.",
+            "photo": "gonzalo-ruiz-de-villa.jpg",
+            "social": {
+                "twitter": "https://twitter.com/gruizdevilla",
+                "linkedin": "https://www.linkedin.com/in/gonzaloruizdevilla/"
+            }
+        }
+    ]
 }
