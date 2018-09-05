@@ -18,6 +18,24 @@
     "koliseoCfp": "https://www.koliseo.com/jsdayes/jsday-es-2018/r4p/5679439232892928#/",
     "speakers": [
         {
+            "name": "Catalina Oyaneder",
+            "bio": "Cata is a passionate software engineer working at TransferWise as part of the Comparison team; a team on a mission to raise awareness about the evils of sending money abroad. Currently, she is focused on the development of products that help people understand how they're charged for international money transfers. She loves challenges and learning new things every day, like how to become an better speaker, yay!",
+            "photo": "cata.png",
+            "social": {
+                "twitter": "https://twitter.com/cataflu",
+                "github": "https://github.com/cat2608/"
+            }
+        },   
+        {
+            "name": "Gonzalo Ruiz de Villa",
+            "bio": "I studied engineering, specialising in energy technologies (nuclear, solar, internal combustion, etc..) but I started to work on the web when I was finishing my studies. In year 2000, I founded my own consultancy company, Adesis Netlife, 14 years ago with some partners. I was the CTO of the company until it became part of GFT Group in year 2015, when it had about 300 people in Spain and Mexico. Nowadays, I am CTO at GFT Spain.  In 2016, I co-founded Kenobi Ventures, an investment vehicle focused on seed and early-stage investment in technology-focused startups. Since 2014, I have been Google Developer Expert and Technology Mentor in Google Launchpad. I am the most active speaker in Angular Madrid Meetup and I am also a regular speaker in other meetups and events.",
+            "photo": "gonzalo-ruiz-de-villa.jpg",
+            "social": {
+                "twitter": "https://twitter.com/gruizdevilla",
+                "linkedin": "https://www.linkedin.com/in/gonzaloruizdevilla/"
+            }
+        },            
+        {
             "name": "Laura Morillo",
             "bio": "Backend Engineer en Seedtag. Ha peleado con muchas tecnologías desde C++ a Javascript y a ratos lidia con servidores. En su tiempo libre además organiza meetups para el GDG Madrid y para grupos en los que promueve la mayor participación de las mujeres en tecnología (AgileGirls y Tech&Ladies).",
             "photo": "laura.jpg",
@@ -47,6 +65,22 @@
             "photo": "eduardo-sada.jpg",
             "social": {
             }
+        },   
+        {
+            "name": "Esther Lozano",
+            "bio": "Javera cuya relación con JS ha pasado de \"it's complicated\" a \"call me back\". Desarrolladora en seedtag; seriéfila y ukeleléfila en su casa; feminista everywhere.",
+            "photo": "esther-lozano.jpg",
+            "social": {
+                "twitter": "https://twitter.com/esloho"
+            }
+        },               
+        {
+            "name": "Rubén Sospedra",
+            "bio": "Lead frontend engineer at MyTaxi. Javascript hacker. Crossfiter and paleo-chef. I play the ukelele and read about political science. Gamer and cinephile.",
+            "photo": "ruben-sospedra.jpg",
+            "social": {
+                "twitter": "https://twitter.com/sospedra_r"
+            }
         },        
         {
             "name": "Ana Encinar",
@@ -75,6 +109,14 @@
                 "github": "https://github.com/DiegoTUI"
             }
         },
+        {
+            "name": "Luis Talegón",
+            "bio": "Data Scientist en seedtag. Apasionado por los últimos avances en Machine Learning. Aspirante a Jedi (pero de los de verdad, no de los de tecnología)",
+            "photo": "luis-alfonso.jpg",
+            "social": {
+                "twitter": "https://twitter.com/luisetex"
+            }
+        },        
         {
             "name": "Gorka Ludlow",
             "bio": "Gorka is a Software Engineer passionate about decentralized/distributed technologies and protocols. He is a pioneer applying web P2P tools to use smartphones as remote controllers for games. His Puppets webapp showcases the opportunity for new human-computer interfaces using data from input sensors other than keyboards and trackpads.",
@@ -114,14 +156,6 @@
                 "github": "https://github.com/pmagaz ",
                 "linkedin": "https://es.linkedin.com/in/pablo-magaz-05b46763",
                 "home": "https://pablomagaz.com/"
-            }
-        }, {
-            "name": "Gonzalo Ruiz de Villa",
-            "bio": "I studied engineering, specialising in energy technologies (nuclear, solar, internal combustion, etc..) but I started to work on the web when I was finishing my studies. In year 2000, I founded my own consultancy company, Adesis Netlife, 14 years ago with some partners. I was the CTO of the company until it became part of GFT Group in year 2015, when it had about 300 people in Spain and Mexico. Nowadays, I am CTO at GFT Spain.  In 2016, I co-founded Kenobi Ventures, an investment vehicle focused on seed and early-stage investment in technology-focused startups. Since 2014, I have been Google Developer Expert and Technology Mentor in Google Launchpad. I am the most active speaker in Angular Madrid Meetup and I am also a regular speaker in other meetups and events.",
-            "photo": "gonzalo-ruiz-de-villa.jpg",
-            "social": {
-                "twitter": "https://twitter.com/gruizdevilla",
-                "linkedin": "https://www.linkedin.com/in/gonzaloruizdevilla/"
             }
         }
     ]
