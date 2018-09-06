@@ -131,6 +131,7 @@ iframe {
 
 .pricing-simple {
     min-height: 300px;
+    height: 100%;
     margin: 0 auto;
 }
 
@@ -427,4 +428,15 @@ img[data-src]:not(.js-lazy-image--handled) {
 
 .organizers-slider {
     padding: 0;
+}
+
+.navbar .container {
+    padding: 0;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 1rem;
 }

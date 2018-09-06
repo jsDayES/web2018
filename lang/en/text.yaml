@@ -121,9 +121,9 @@ tickets:
     specialWorkshopPrice: 80€
     specialWorkshopDesc: Hands On: The Modular Web! by <a target="noopener" href="https://twitter.com/substack">@substack</a>
     normal: Regular
-    normalTicketPrice: 80€
+    normalTicketPrice: 55€
     special: Students and unemployed
-    specialTicketPrice: 20€
+    specialTicketPrice: 25€
     warning: Has to be certified upon entrance to the venue.
     specialpoint: Same as regular ticket
 
