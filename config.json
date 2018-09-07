@@ -3,7 +3,7 @@
     "sections": {
         "streaming": false,
         "speakers": true,
-        "schedule": false,
+        "schedule": true,
         "presentation": false,
         "where": true,
         "tickets": true,

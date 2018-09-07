@@ -5,7 +5,6 @@
                 <h2>{{ text.schedule.title }}</h2>
                 <span class="center-line"></span>
                 <p>{{ text.schedule.description1 }}</p>
-                <p>{{ text.schedule.description2 }}</p>
             </div>
         </div>
         <div class="row">
@@ -28,8 +27,8 @@ return script;
 function onLoad() {
 if (typeof Koliseo !== 'undefined' && Koliseo.agenda && typeof fetch !== 'undefined') {
 Koliseo.agenda.render({
-c4pUrl: 'https://www.koliseo.com/jsdayes/jsday-es-2018/r4p/5765283616653312',
-agendaUrl: 'https://www.koliseo.com/jsdayes/jsday-es-2018/r4p/5765283616653312/agenda',
+c4pUrl: 'https://www.koliseo.com/jsdayes/jsday-es-2018/r4p/5679439232892928',
+agendaUrl: 'https://www.koliseo.com/jsdayes/jsday-es-2018/r4p/5679439232892928/agenda',
 element: document.querySelector('.koliseo-schedule'),
 oauthClientId: '5675156680736768'
 });
@@ -39,6 +38,9 @@ oauthClientId: '5675156680736768'
 (typeof fetch === 'undefined') && loadJS('/js/koliseo-polyfill.js', onLoad);
 loadJS('/js/koliseo-agenda.js', onLoad);
                 </script>
+        </div>
+        <div class="row">
+            <p class="warning">Slots y horarios provisionales</p>
         </div>
     </div>
 </section>
