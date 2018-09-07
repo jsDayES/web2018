@@ -477,8 +477,8 @@ var AgendaView = (function () {
   _createClass(AgendaView, [{
     key: 'render',
     value: function render() {
-      var dayId = !location.hash ? '' : /#([^\/]+)(\/.+)?/.exec(location.hash)[1];
-
+			var dayId = !location.hash ? '' : /#([^\/]+)(\/.+)?/.exec(location.hash)[1];
+			
 			// default secondon day
 			if (this.days[1]) {
 				dayId = this.days[1].id + "";
@@ -612,7 +612,8 @@ var AgendaView = (function () {
     key: 'pushState',
     value: function pushState(title, hash) {
       if (typeof history !== 'undefined' && history.pushState) {
-        history.pushState({}, title, location.pathname + location.search + '#' + hash);
+				// remove because adds a hash that prevent links with other hash ex: http://localhost:5000/#tickets redirects to http://localhost:5000/#5345346346
+        // history.pushState({}, title, location.pathname + location.search + '#' + hash);
       }
     }
   }, {
