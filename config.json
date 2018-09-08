@@ -162,13 +162,21 @@
         },
         {
             "name": "Pablo Magaz",
-            "bio": "Soy Pablo Magaz, JavaScript Tech Lead, con una experiencia de más de 15 años en el desarrollo de software con diferentes lenguajes de programación pero muy enfocado al mundo JavaScript en los últimos años y con amplia experiencia con frameworks y librerías como React, Angular, RxJs,Redux, Vue o Polymer. Ponente en diferentes eventos, formador de equipos, dedico también parte de mi tiempo a escribir  en mi blog sobre el ecléptico mundo de JavaScript 'El Blog Isomórfico'.             ",
+            "bio": "Soy Pablo Magaz, JavaScript Tech Lead, con una experiencia de más de 15 años en el desarrollo de software con diferentes lenguajes de programación pero muy enfocado al mundo JavaScript en los últimos años y con amplia experiencia con frameworks y librerías como React, Angular, RxJs,Redux, Vue o Polymer. Ponente en diferentes eventos, formador de equipos, dedico también parte de mi tiempo a escribir  en mi blog sobre el ecléptico mundo de JavaScript 'El Blog Isomórfico'.",
             "photo": "pablo-magaz.jpg",
             "social": {
                 "twitter": "https://twitter.com/pablo_magaz",
                 "github": "https://github.com/pmagaz ",
                 "linkedin": "https://es.linkedin.com/in/pablo-magaz-05b46763",
                 "home": "https://pablomagaz.com/"
+            }
+        },
+        {
+            "name": "Federico Badiola",
+            "bio": "Programo desde que me alcanza la memoria, empecé a trastear desde crío y eso me ha convertido en un adicto a esto. Me gusta trastear con tecnología y, aprender y curiosear los entresijos de las cosas. Actualmente trabajo en Devo, una plataforma de BigData en tiempo real, como Senior Software Engineer haciendo cosas chulas con Javascript.",
+            "photo": "federico-badiola.jpg",
+            "social": {
+                "linkedin": "https://es.linkedin.com/in/pablo-magaz-05b46763"
             }
         }
     ]
