@@ -403,6 +403,10 @@ ul.speakers {
     }
 }
 
+#schedule {
+    height: 1200px;
+}
+
 #schedule .kworkspace {
     overflow: auto;
     max-width: 100%;
