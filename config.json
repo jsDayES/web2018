@@ -178,6 +178,12 @@
             "social": {
                 "linkedin": "https://es.linkedin.com/in/pablo-magaz-05b46763"
             }
+        },
+        {
+            "name": "Pedro Palao",
+            "bio": "Licenciado en Matemáticas, especialidad de Computación. Unos años como profesor en el Departamento de Informática de la Universidad Complutense. Luego programador en el Departamento de Seguridad Informática en Bankinter. Actualmente SVP de R&D en <a href=\"https://www.devo.com\" target=\"_blank\">Devo</a> (antes Logtrust), una empresa dedicada a big data en tiempo real.",
+            "photo": "pedro-palao.jpg",
+            "social": { }
         }
     ]
 }
