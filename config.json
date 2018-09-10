@@ -184,6 +184,14 @@
             "bio": "Licenciado en Matemáticas, especialidad de Computación. Unos años como profesor en el Departamento de Informática de la Universidad Complutense. Luego programador en el Departamento de Seguridad Informática en Bankinter. Actualmente SVP de R&D en <a href=\"https://www.devo.com\" target=\"_blank\">Devo</a> (antes Logtrust), una empresa dedicada a big data en tiempo real.",
             "photo": "pedro-palao.jpg",
             "social": { }
+        },
+        {
+            "name": "Ibon Tolosana",
+            "bio": "Ibon was CTO and co-founder at Ludei, as well as a failed entrepreneur at Novoplay, and CTO and the person behind the project juegon.com. He thinks the web will win over all other platforms and that's why he's devoted countless hours on HTML5, webgl, nodejs, native v8 and all web stuff. For the last two years, he's been a native ios/android hardcore developer, but just for a living. Father of two, doer, dreamer and a snob chocolate eater.",
+            "photo": "ibon-tolosana.jpg",
+            "social": {
+                "twitter": "https://twitter.com/hyperandroid"
+            }
         }
     ]
 }
