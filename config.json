@@ -172,6 +172,14 @@
             }
         },
         {
+            "name": "Paqui Calabria",
+            "bio": "Estudió aparejadores y acabó haciendo frontend prácticamente de rebote hace algo más de cinco años. Lleva en AXA IT tres años, y este último he empezado a colaborar con AdaJS Barcelona.",
+            "photo": "paqui-calabria.jpg",
+            "social": {
+                "twitter": "https://twitter.com/zurribulle"
+            }
+        },
+        {
             "name": "Federico Badiola",
             "bio": "Programo desde que me alcanza la memoria, empecé a trastear desde crío y eso me ha convertido en un adicto a esto. Me gusta trastear con tecnología y, aprender y curiosear los entresijos de las cosas. Actualmente trabajo en Devo, una plataforma de BigData en tiempo real, como Senior Software Engineer haciendo cosas chulas con Javascript.",
             "photo": "federico-badiola.jpg",
