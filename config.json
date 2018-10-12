@@ -166,7 +166,7 @@
             "photo": "pablo-magaz.jpg",
             "social": {
                 "twitter": "https://twitter.com/pablo_magaz",
-                "github": "https://github.com/pmagaz ",
+                "github": "https://github.com/pmagaz",
                 "linkedin": "https://es.linkedin.com/in/pablo-magaz-05b46763",
                 "home": "https://pablomagaz.com/"
             }
@@ -177,6 +177,16 @@
             "photo": "paqui-calabria.jpg",
             "social": {
                 "twitter": "https://twitter.com/zurribulle"
+            }
+        },
+        {
+            "name": "Marta Fonda",
+            "bio": "In my early professional experience, and because of my mixed technical and business background, I worked as Fullstack Engineer and Product Owner in different companies. I have also co-founded Mindly, US-based tech startup aiming to reduce the mismatch between the access and provision of mental health services. I am currently working at Joinedapp, US-based startup enabling new sales, marketing and customer service channels using AI. I am the Product Owner but I am also the responsible of Design and Development. I am also the  ReactJS Madrid Meetup organizer.",
+            "photo": "marta-fonda.jpg",
+            "social": {
+                "github": "https://github.com/martafonda",
+                "twitter": "https://twitter.com/MartaFonda",
+                "linkedin": "https://www.linkedin.com/in/martafonda/"
             }
         },
         {
