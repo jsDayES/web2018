@@ -21,6 +21,11 @@ cookies:
     link: Más información
     dismiss: Ok, entendido!
 
+streaming:
+    seeStreaming: Ver streaming
+    title: ¡Síguenos en directo!
+    text: Sigue por streaming el JSDayES 2018, la mayor conferencia sobre JavaScript en España.
+
 newsletter:
     url: https://app.mailjet.com/widget/iframe/2WPT/6fy
     message1: Suscríbete a la newsletter del JSDayES y te mantendremos al día.

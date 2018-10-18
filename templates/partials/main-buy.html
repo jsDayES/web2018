@@ -9,9 +9,15 @@
                             <span class="date">{{ text.home.date | safe }}</span>
                         </div>
                         <h1>{{ text.home.welcome }}</h1>
-                    <div class="text-center">
-                        <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsday-es-2018">{{ text.tickets.buyticket }}</a>
-                    </div>                              
+                        <div class="text-center">
+                            {% if sections.tickets %}
+                            <a class="btn btn-lg btn-yellow" target="noopener" href="https://www.koliseo.com/jsdayes/jsday-es-2018">{{ text.tickets.buyticket }}</a>
+                            {% endif %}
+                            {% if sections.streaming %}
+                            <a class="btn btn-lg btn-yellow" href="{{root}}#streaming">{{ text.streaming.seeStreaming }}  <i class="glyphicon glyphicon-facetime-video"></i></a>
+                            {% endif %}
+
+                        </div>
                     </div>
                 </div>
             </div>

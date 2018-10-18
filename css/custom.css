@@ -257,8 +257,17 @@ iframe {
     color: #89621a
 }
 
-.streaming-section iframe {
-    max-width: initial
+.streaming-section .tracks {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.streaming-section .track {
+  margin: 4rem 0;
 }
 
 .home-section+section {
