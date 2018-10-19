@@ -1,7 +1,7 @@
 {
     "mode": "buy",
     "sections": {
-        "streaming": false,
+        "streaming": true,
         "speakers": true,
         "schedule": true,
         "presentation": false,
