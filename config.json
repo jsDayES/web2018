@@ -1,7 +1,7 @@
 {
-    "mode": "buy",
+    "mode": "wait",
     "sections": {
-        "streaming": true,
+        "streaming": false,
         "speakers": true,
         "schedule": true,
         "presentation": false,

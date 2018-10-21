@@ -37,7 +37,7 @@
                 <li><a href="{{root}}#organizers">{{ text.header.organizers }}</a></li>
                 {% endif %}
 
-                {% if sections.newsletter and section.streaming == false %}
+                {% if sections.newsletter and not sections.streaming %}
                 <li><a href="{{root}}#newsletter">{{ text.header.newsletter }}</a></li>
                 {% endif %}
 
